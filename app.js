@@ -112,6 +112,12 @@
       $('speakeasy-ingress').textContent = d.speakeasy.ingress || '';
       $('speakeasy-liste').innerHTML = (d.speakeasy.steder || []).map(kort).join('');
     } else { $('speakeasy').hidden = true; }
+    if (d.hemmelig) {
+      $('hemmelig-ingress').textContent = d.hemmelig.ingress || '';
+      $('hemmelig-liste').innerHTML = (d.hemmelig.grupper || []).map(function (g) {
+        return '<h3 class="ma-tittel">' + esc(g.tittel) + '</h3><div class="grid">' + (g.steder || []).map(kort).join('') + '</div>';
+      }).join('');
+    } else { $('hemmelig').hidden = true; }
     $('moro-liste').innerHTML = (d.moro || []).map(function (m) {
       return '<article class="card idea"><h3>' + esc(m.tittel) + '</h3><p>' + esc(m.tekst) + '</p>' +
         '<div class="mapbtns">' + (m.sted ? '<a class="tl-map" href="' + dir(finn(m.sted)) + '" target="_blank" rel="noopener">' + navIkon + 'Veibeskrivelse</a>' : '') +

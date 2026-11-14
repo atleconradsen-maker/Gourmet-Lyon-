@@ -69,6 +69,7 @@ program:
       - { tid: "12:30", tittel: "Lang lunsj: Café Comptoir Abel", sted: "Café Comptoir Abel", chip: book, tekst: Bouchon fra 1928 nær Ainay. Kjent for tablier de sapeur og kardongratin. }
       - { tid: "15:00", tittel: Fourvière-basilikaen, sted: "Fourvière-basilikaen", tekst: Ta kabelbanen fra Vieux Lyon. Utsikten over hele byen fra terrassen bak kirken. }
       - { tid: "17:30", tittel: "Carousel Beer, Croix-Rousse", sted: "Carousel Beer", chip: ipa, tekst: Taproom med ca. 12 roterende fat og stort utvalg på boks. Terrasse på torget. Metro C eller Uber. }
+      - { tid: "19:15", tittel: "Aperitiff: Le Phosphore", sted: "Le Phosphore Tetedoie Lyon", tekst: "Têtedoies vinbar med terrasse i samme hus. Et glass med utsikt over byen før vi går inn til middag." }
       - { tid: "20:00", tittel: "Middag: Têtedoie", sted: "Têtedoie", chip: book, tekst: "Kveldens store middag, på Fourvière-høyden med vinduer over byen. Uber fra Croix-Rousse ca. 15 min." }
 
   - dag: Søndag 26. september
@@ -781,3 +782,83 @@ speakeasy:
       bestill: "Inngang: Gå gjennom sjokoladebutikken og ned trappa."
       adresse: 12 rue du Bœuf, 69005 Lyon
       sok: Ambassade Bonnat Crozet 12 rue du Boeuf Lyon
+
+# Hemmelige Lyon: rare, skjulte og uventede steder, delt i grupper.
+hemmelig:
+  ingress: "Lyon er en by som gjemmer det beste bak dører, i bakgårder og på tak. Her er stedene som får selv lyonnaisene til å si «det visste jeg ikke»."
+  grupper:
+    - tittel: Drinker med utsikt
+      steder:
+        - navn: Le Phosphore
+          type: Vinbar med terrasse · Fourvière
+          tekst: "Têtedoies egen vinbar, i samme hus som restauranten. Panoramaterrasse over hele byen, viner valgt av kokken, tapas og charcuteri. Perfekt aperitiff rett før middagen lørdag: dere trenger bare å gå inn døra ved siden av."
+          apent: "Mandag–lørdag til 01:00. Stengt søndag."
+          adresse: 4 rue du Professeur Pierre Marion, 69005 Lyon
+          sok: Le Phosphore Tetedoie Lyon
+        - navn: Rooftop Maison Nô
+          type: Takbar · Presqu'île
+          tekst: "Øverste etasje på Maison Nô, med utsikt til Fourvière, den rødlyste operakuppelen og klokketårnet på rådhuset. Egne cocktails."
+          apent: "Tirsdag–lørdag om kvelden. Sjekk tider før dere går."
+          adresse: 11 rue du Bât-d'Argent, 69001 Lyon
+          sok: Maison No rooftop Lyon
+          nettside: https://www.maisonno.com/
+          chip: sjekk
+        - navn: Celest, 32. etasje
+          type: Panoramarestaurant · Part-Dieu
+          tekst: "Øverst i «Blyanten», Tour Part-Dieu, som er byens mest kjente skyskraper. Hele Lyon under føttene. Best ved solnedgang."
+          apent: "Middag onsdag–lørdag 19:30–23:00"
+          bestill: "Book bord på forhånd."
+          adresse: 129 rue Servient, 69003 Lyon
+          sok: Celest Radisson Blu Lyon
+          chip: book
+    - tittel: Skjulte bakgårder og passasjer
+      steder:
+        - navn: Cour des Voraces
+          type: Traboule · Croix-Rousse
+          tekst: "Lyons mest spektakulære traboule. En åtte etasjer høy, frittstående steintrapp i en bakgård der silkearbeiderne bodde. Silkeopprøret i 1848 ble planlagt her."
+          apent: "På dagtid. Vær stille, folk bor her."
+          bestill: "Inngang: Gå inn ved 9 place Colbert og kom ut i montée Saint-Sébastien."
+          adresse: 9 place Colbert, 69001 Lyon
+          sok: Cour des Voraces Lyon
+        - navn: Hôtel de Bullioud
+          type: Skjult renessansegalleri · Vieux Lyon
+          tekst: "Innerst i en traboule ligger galleriet Philibert Delorme tegnet etter Italia-turen sin i 1536, Frankrikes første smak av renessansen. Et par minutter fra leiligheten."
+          apent: "Bakgården er vanligvis åpen på dagtid."
+          adresse: 8 rue Juiverie, 69005 Lyon
+          sok: Hotel de Bullioud Lyon
+        - navn: Maison Henri IV
+          type: Bakgård · Vieux Lyon
+          tekst: "Middelalderhus med en praktfull trapp i arkader på slanke søyler. Henri IV bodde faktisk aldri her, men det har ingen brydd seg om på 400 år."
+          adresse: 4 rue Juiverie, 69005 Lyon
+          sok: Maison Henri IV rue Juiverie Lyon
+        - navn: Passage des Imprimeurs
+          type: Smal passasje · Presqu'île
+          tekst: "Trang passasje med steinbuer og små restauranter, oppkalt etter boktrykkerne som holdt til her. Snarvei fra Saône-kaia til rue Mercière."
+          adresse: 26 quai Saint-Antoine, 69002 Lyon
+          sok: Passage des Imprimeurs Lyon
+        - navn: Escalier Prunelle
+          type: Fargerik trapp · Croix-Rousse
+          tekst: "En hel trapp malt i sterke farger av kunstneren Genaro Lopez. Fint fotostopp på vei til eller fra Carousel Beer."
+          adresse: Rue Prunelle, 69001 Lyon
+          sok: Escalier Prunelle Lyon
+    - tittel: Det rare og morsomme
+      steder:
+        - navn: Musée Cinéma et Miniature
+          type: Filmrekvisitter og miniatyrer · Vieux Lyon
+          tekst: "Over hundre miniatyrscener i skala 1:12 som er så detaljerte at du tror det er bilder, og ekte rekvisitter fra filmer, blant annet Alien-dronningen. Ligger i rue Saint-Jean, rett rundt hjørnet."
+          apent: "Hverdager 10:00–18:30 (tirsdag fra 13:30), helg 10:00–19:00. Ca. 23 € per voksen."
+          adresse: 60 rue Saint-Jean, 69005 Lyon
+          sok: Musee Cinema et Miniature Lyon
+          nettside: https://www.lyon.fr/lieu/musees/musee-cinema-et-miniature
+        - navn: Likvognbroen og Loyasse
+          type: Morbid historie · Fourvière
+          tekst: "Passerelle des Quatre-Vents står der «likvognviadukten» gikk, som fraktet kistene til Loyasse-kirkegården. Kirkegården fra 1812 er full av storslåtte gravmæler, og tilhengerne til den mystiske healeren Maître Philippe legger fortsatt blomster på graven hans."
+          adresse: Cimetière de Loyasse, 69005 Lyon
+          sok: Cimetiere de Loyasse Lyon
+        - navn: Hameau Dubœuf
+          type: Vin-temapark · Beaujolais
+          tekst: "Europas første temapark om vin, 25 min fra vingården. Det morsomste for oss: «vin mystère», der dere smaker en vin uten etikett og skal gjette navn og appellasjon. Perfekt konkurranse for Gourmetklubben. Minigolf med Beaujolais-cruene som hull."
+          apent: "Onsdag–søndag 9:30–19:00, siste inngang 17:30. Passer torsdag."
+          adresse: 796 route de la Gare, 71570 Romanèche-Thorins
+          sok: Hameau Duboeuf Romaneche-Thorins
+          nettside: https://www.duboeuf.com/fr/le-parc
