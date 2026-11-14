@@ -190,3 +190,29 @@ footer img{height:40px;filter:var(--logo-filter);opacity:.8}
 .taxi-addr{display:grid;gap:2px;padding:10px 0;border-bottom:1px dashed var(--line)}
 .taxi-addr span{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
 .taxi-addr b{font-size:1.2rem;font-family:var(--f-display)}
+
+/* meny oppe til høyre */
+.nav .wrap{justify-content:flex-start}
+.vidar-pill{margin-left:auto;padding:7px 14px;border-radius:999px;background:var(--gamay);color:var(--bg)!important;font-weight:600;font-size:.88rem;font-style:italic;text-decoration:none;white-space:nowrap}
+.menu-btn{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:600 .92rem var(--f-body);cursor:pointer}
+.burger{display:grid;gap:4px;width:18px}
+.burger i{display:block;height:2px;background:currentColor;border-radius:2px;transition:transform .2s,opacity .2s}
+.menu-btn.open .burger i:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.menu-btn.open .burger i:nth-child(2){opacity:0}
+.menu-btn.open .burger i:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.meny{position:absolute;left:0;right:0;top:100%;background:var(--surface);border-bottom:1px solid var(--line);box-shadow:0 18px 40px rgb(0 0 0 / .12);max-height:calc(100vh - 80px);overflow-y:auto}
+.meny .wrap{display:grid;gap:18px;height:auto;padding-block:20px 24px}
+.meny-vidar{display:grid;gap:2px;padding:16px 18px;border-radius:14px;background:var(--gamay);color:var(--bg);text-decoration:none;font-family:var(--f-display);font-size:1.6rem;font-weight:800;font-style:italic}
+.meny-vidar span{font-family:var(--f-body);font-style:normal;font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;opacity:.85}
+.meny-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.meny-grid div{display:grid;gap:2px;align-content:start}
+.meny-grid h4{margin:0 0 4px;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.meny-grid a{padding:8px 0;color:var(--ink);text-decoration:none;font-weight:500;font-size:1.02rem;border-bottom:1px dashed var(--line)}
+.meny-grid a:hover{color:var(--gamay)}
+@media (max-width:560px){.meny-grid{grid-template-columns:1fr 1fr}.vidar-pill{padding:6px 10px;font-size:.8rem}}
+@media (max-width:360px){.vidar-pill{display:none}}
+@media (prefers-reduced-motion:reduce){.burger i{transition:none}}
+.nav .meny .wrap{display:grid;grid-template-columns:minmax(0,1fr);justify-content:stretch;justify-items:stretch;align-items:start}
+.nav .meny-vidar{color:var(--bg);font-size:1.6rem;white-space:normal}
+.nav .meny-grid a{font-size:1.02rem;white-space:normal}
+.nav .meny-grid a:hover{color:var(--gamay)}

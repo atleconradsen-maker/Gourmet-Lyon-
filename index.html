@@ -15,19 +15,18 @@
 <nav class="nav" aria-label="Hovedmeny">
   <div class="wrap">
     <a href="#top" aria-label="Til toppen"><img src="logo.png" alt="Gourmetklubben"></a>
-    <ul>
-      <li><a href="#program">Program</a></li>
-      <li><a href="#mat">Mat og drikke</a></li>
-      <li><a href="#ipa">IPA</a></li>
-      <li><a href="#barer">Barer</a></li>
-      <li><a href="#taxi">Taxi</a></li>
-      <li><a href="#vidar">Vidars corner</a></li>
-      <li><a href="#moro">Moro</a></li>
-      <li><a href="#bo">Overnatting</a></li>
-      <li><a href="#kart">Kart</a></li>
-      <li><a href="#transport">Transport</a></li>
-      <li><a href="#praktisk">Praktisk</a></li>
-    </ul>
+    <a class="vidar-pill" href="#vidar">Vidars corner</a>
+    <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="meny"><span class="burger" aria-hidden="true"><i></i><i></i><i></i></span>Meny</button>
+  </div>
+  <div class="meny" id="meny" hidden>
+    <div class="wrap">
+      <a class="meny-vidar" href="#vidar"><span>Spesialavdeling</span>Vidars corner</a>
+      <div class="meny-grid">
+        <div><h4>Turen</h4><a href="#program">Program</a><a href="#bo">Overnatting</a><a href="#kart">Kart</a><a href="#transport">Transport</a></div>
+        <div><h4>Mat og drikke</h4><a href="#mat">Restauranter</a><a href="#ipa">IPA-guiden</a><a href="#barer">Barer og utesteder</a><a href="#leksikon">Leksikon</a></div>
+        <div><h4>Nyttig</h4><a href="#taxi">Ring taxi</a><a href="#praktisk">Praktisk info</a><a href="#moro">Forslag til moro</a><a href="#sjekkliste">Sjekkliste</a></div>
+      </div>
+    </div>
   </div>
 </nav>
 
@@ -50,7 +49,7 @@
 
 <main>
 <section id="program"><div class="wrap">
-  <div class="sec-head"><span class="eyebrow">Program</span><h2>Fire dager, dag for dag</h2><p class="lead">Tidene er veiledende. Lange lunsjer er planlagt med vilje.</p></div>
+  <div class="sec-head"><span class="eyebrow">Program</span><h2>Fire dager, dag for dag</h2><p class="lead">Et forslag til opplegg. Ingenting er spikret ennå, og lange lunsjer er planlagt med vilje.</p></div>
   <div id="merknad"></div>
   <div class="days" id="dager"></div>
 </div></section>
@@ -162,5 +161,14 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
 <script src="app.js"></script>
+<script>
+(function () {
+  var btn = document.getElementById('menu-btn'), m = document.getElementById('meny');
+  function set(open) { m.hidden = !open; btn.setAttribute('aria-expanded', open); btn.classList.toggle('open', open); }
+  btn.addEventListener('click', function () { set(m.hidden); });
+  m.addEventListener('click', function (e) { if (e.target.closest('a')) set(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') set(false); });
+})();
+</script>
 </body>
 </html>

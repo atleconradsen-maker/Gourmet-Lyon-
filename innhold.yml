@@ -29,10 +29,10 @@ tur:
     - { etikett: Gjengen, verdi: 5 karer, tekst: "Mat, vin og IPA" }
     - { etikett: Bord å booke, verdi: 5 stk, tekst: Se sjekklista }
 
-# En gul merknad øverst i programmet. Slett hele blokken når den ikke trengs.
-merknad:
-  tittel: Endring torsdag
-  tekst: Le Comptoir Beaujolais i Beaujeu er en vinkjeller med smaking, ost og charcuterie, ikke en middagsrestaurant. Den stenger rundt 18:30–19:30. Den passer derfor best som ettermiddagsstopp, med middag på Le Mont Brouilly eller hjemme på vingården etterpå.
+# En gul merknad øverst i programmet kan legges til slik:
+# merknad:
+#   tittel: Overskrift
+#   tekst: Selve beskjeden
 
 program:
   - dag: Torsdag 23. september
