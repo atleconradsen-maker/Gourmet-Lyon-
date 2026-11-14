@@ -51,14 +51,25 @@
         }).join('') + '</ol></article>';
     }).join('');
 
-    $('steder').innerHTML = (d.steder || []).map(function (s) {
-      return '<article class="card"><span class="kind">' + esc(s.type) + '</span><h3>' + esc(s.navn) + '</h3>' +
+    var kort = function (s) {
+      return '<article class="card"><span class="kind">' + esc(s.type) + '</span><h3>' + esc(s.navn) + chip(s.chip) + '</h3>' +
         (s['når'] ? '<span class="day-ref">' + esc(s['når']) + '</span>' : '') +
         (s.tekst ? '<p>' + esc(s.tekst) + '</p>' : '') +
+        (s.apent ? '<div class="order"><b>Åpent:</b> ' + esc(s.apent) + '</div>' : '') +
         (s.bestill ? '<div class="order"><b>Tips:</b> ' + esc(s.bestill) + '</div>' : '') +
         (s.adresse ? '<span class="addr">' + esc(s.adresse) + '</span>' : '') +
         knapper(s.sok || s.navn) +
         (s.nettside ? '<div class="links"><a href="' + esc(s.nettside) + '" target="_blank" rel="noopener">Nettside ↗</a></div>' : '') + '</article>';
+    };
+    $('steder').innerHTML = (d.steder || []).map(kort).join('');
+    $('barer-liste').innerHTML = (d.barer || []).map(kort).join('');
+    if (d.vidar) {
+      $('vidar-ingress').textContent = d.vidar.ingress || '';
+      $('vidar-steder').innerHTML = (d.vidar.steder || []).map(kort).join('');
+    } else { $('vidar').hidden = true; }
+    $('moro-liste').innerHTML = (d.moro || []).map(function (m) {
+      return '<article class="card idea"><h3>' + esc(m.tittel) + '</h3><p>' + esc(m.tekst) + '</p>' +
+        (m.sted ? '<a class="tl-map" href="' + dir(finn(m.sted)) + '" target="_blank" rel="noopener">' + navIkon + 'Veibeskrivelse</a>' : '') + '</article>';
     }).join('');
 
     $('overnatting').innerHTML = (d.overnatting || []).map(function (o) {

@@ -259,3 +259,105 @@ sjekkliste:
   - Last ned Uber og TCL-appen
   - Pakk vinbeskyttere til flaskene i innsjekket bagasje
   - Ta med førerkort til sjåføren
+
+# ─────────────────────────────────────────────────────────────
+#  BARER OG UTESTEDER – "apent" vises på kortet.
+# ─────────────────────────────────────────────────────────────
+barer:
+  - navn: La Mi Graine
+    type: Bar · Saint-Paul
+    tekst: Koselig nabolagsbar med terrasse på torget, 2 min fra leiligheten. Godt utvalg belgisk øl og ofte jazz manouche.
+    apent: Alle dager 15:00–03:00
+    adresse: 11 place Saint-Paul, 69005 Lyon
+    sok: La Mi Graine Lyon
+
+  - navn: La Cave des Voyageurs
+    type: Vinbar · Saint-Paul
+    tekst: En av Lyons eldste vinbarer, rett rundt hjørnet. Naturvin og småretter.
+    apent: Tirsdag–lørdag 17:00–01:00
+    adresse: 7 place Saint-Paul, 69005 Lyon
+    sok: La Cave des Voyageurs Lyon
+
+  - navn: Bar du 405
+    type: Ølbar · Presqu'île
+    tekst: Rundt 50 øl på fat fordelt på to barer i samme gate. Biljard, sportsstemning og høyt lydnivå.
+    apent: Kveld, sjekk dagens tider
+    adresse: 9 rue Constantine, 69001 Lyon
+    sok: Bar du 405 Lyon
+
+  - navn: Dikkenek
+    type: Belgisk ølbar · Croix-Rousse
+    tekst: Stor terrasse og belgisk øl i massevis. Passer fint før eller etter Carousel lørdag.
+    apent: Kveld, sjekk dagens tider
+    adresse: 3 rue d'Austerlitz, 69004 Lyon
+    sok: Dikkenek Lyon
+
+  - navn: L'Antiquaire
+    type: Cocktailbar · Pentes de la Croix-Rousse
+    tekst: Speakeasy med noen av byens beste cocktails. Ring på og vent på å bli sluppet inn.
+    apent: "Alle dager fra 18:00, til 03:00 fredag og lørdag"
+    adresse: 20 rue Hippolyte Flandrin, 69001 Lyon
+    sok: L'Antiquaire Lyon
+
+  - navn: Le Sucre
+    type: Klubb på taket · Confluence
+    tekst: Takterrasse og klubb på den gamle sukkerfabrikken ved Saône. Elektronisk musikk til langt på natt.
+    apent: "Fredag og lørdag 23:00–05:00"
+    adresse: 50 quai Rambaud, 69002 Lyon
+    sok: Le Sucre Lyon
+
+# ─────────────────────────────────────────────────────────────
+#  VIDARS CORNER
+# ─────────────────────────────────────────────────────────────
+vidar:
+  ingress: "Kurert av og for vår egen kulturattaché. Gentlemen's clubs i Lyon, for de som synes kvelden er ung. Sjekk åpningstider før dere drar, og husk at det er strengt «se, men ikke rør»."
+  steder:
+    - navn: Bus Paradise
+      type: Gentlemen's club · Cité Internationale
+      tekst: Byens mest kjente gentlemen's club, langs Rhône ved Parc de la Tête d'Or. Champagne-priser.
+      apent: Tirsdag–lørdag 22:00–05:00
+      adresse: 44 quai Charles de Gaulle, 69006 Lyon
+      sok: Bus Paradise Lyon
+      chip: sjekk
+
+    - navn: Vertige Strip
+      type: Gentlemen's club · Presqu'île
+      tekst: Midt i sentrum, kort Uber fra gamlebyen.
+      apent: Kveld og natt, sjekk tider
+      adresse: 5 rue du Griffon, 69001 Lyon
+      sok: Vertige Strip 5 rue du Griffon Lyon
+      chip: sjekk
+
+    - navn: Ô Boudoir
+      type: Burlesk kabaret · Ainay
+      tekst: "Den elegante varianten: burlesk show med cocktails. Showene går på lørdagskvelder, så book bord."
+      apent: "Fra 19:00, show lørdag kveld"
+      adresse: 15 rue de Condé, 69002 Lyon
+      sok: Ô Boudoir Lyon
+      chip: book
+
+# ─────────────────────────────────────────────────────────────
+#  FORSLAG TIL MORO – idéer, ikke plan. Slett det dere ikke vil ha.
+# ─────────────────────────────────────────────────────────────
+moro:
+  - tittel: Gourmetklubbens blindtest
+    tekst: "Kjøp fem cru-flasker på Le Comptoir Beaujolais torsdag. Blindsmak på vingården om kvelden: hver gjetter landsby og pris, og taperen bærer vinkassa resten av turen."
+  - tittel: Quenelle-kåringen
+    tekst: "Alle gir karakter 1–6 på hver bouchon-rett gjennom helga. Vinneren kåres over middagen på Têtedoie."
+  - tittel: Pétanque i parken
+    tekst: "Kjøp et sett kuler og spill på grusen langs Saône. Taperlaget spanderer pastis."
+    sted: Quai Saint-Antoine Lyon
+  - tittel: Søndagsmarked på Quai Saint-Antoine
+    tekst: "Lyons store matmarked langs Saône, 5 min fra leiligheten. Østers og hvitvin til frokost før flyet."
+    sted: Marché Saint-Antoine Lyon
+  - tittel: Båttur på Saône
+    tekst: "Les Bateaux Lyonnais kjører sightseeing og lunsjcruise fra kaiene i sentrum. Rolig avslutning på en lang lunsj."
+    sted: Les Bateaux Lyonnais
+  - tittel: Fotballkamp med Olympique Lyonnais
+    tekst: "Sjekk terminlista når den slippes. Spiller OL hjemme helga 24.–26. september, er det en stor opplevelse på Groupama Stadium."
+    sted: Groupama Stadium Décines
+  - tittel: Klubb-t-skjorter
+    tekst: "Trykk Gourmetklubben-logoen på fem t-skjorter til lørdagens pubrunde. Gjør det også lettere å finne hverandre igjen."
+  - tittel: Pubrunde i Saint-Paul
+    tekst: "La Mi Graine, La Cave des Voyageurs og flere barer ligger rundt samme torg, 2 min fra senga. Perfekt avslutning lørdag kveld."
+    sted: Place Saint-Paul Lyon

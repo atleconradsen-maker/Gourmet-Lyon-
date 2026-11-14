@@ -173,3 +173,10 @@ footer img{height:40px;filter:var(--logo-filter);opacity:.8}
 .bnav a.bnav-hjem{color:var(--saone)}
 .bnav a.bnav-hjem svg{stroke:var(--saone)}
 @media (max-width:760px){.mapbtn{flex:1 1 auto;justify-content:center}}
+
+/* Vidars corner */
+.vidar{background:var(--gamay-soft)}
+.vidar .eyebrow{color:var(--gamay)}
+.vidar h2{font-style:italic}
+.vidar .card{border-color:color-mix(in srgb,var(--gamay) 30%,var(--line))}
+.idea h3{font-size:1.15rem}
