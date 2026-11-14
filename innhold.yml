@@ -69,7 +69,7 @@ program:
       - { tid: "12:30", tittel: "Lang lunsj: Café Comptoir Abel", sted: "Café Comptoir Abel", chip: book, tekst: Bouchon fra 1928 nær Ainay. Kjent for tablier de sapeur og kardongratin. }
       - { tid: "15:00", tittel: Fourvière-basilikaen, sted: "Fourvière-basilikaen", tekst: Ta kabelbanen fra Vieux Lyon. Utsikten over hele byen fra terrassen bak kirken. }
       - { tid: "17:30", tittel: "Carousel Beer, Croix-Rousse", sted: "Carousel Beer", chip: ipa, tekst: Taproom med ca. 12 roterende fat og stort utvalg på boks. Terrasse på torget. Metro C eller Uber. }
-      - { tid: "20:00", tittel: "Middag: Têtedoie", sted: "Têtedoie", chip: book, tekst: Kveldens store middag, på Fourvière-høyden med vinduer over byen. Uber fra Croix-Rousse ca. 15 min. }
+      - { tid: "20:00", tittel: "Middag: Têtedoie", sted: "Têtedoie", chip: book, tekst: "Kveldens store middag, på Fourvière-høyden med vinduer over byen. Uber fra Croix-Rousse ca. 15 min." }
 
   - dag: Søndag 26. september
     hvor: Hjemreise
@@ -231,12 +231,12 @@ praktisk:
   - { etikett: Måltider, tittel: Franske tider, tekst: "Lunsj 12–14, middag fra 19:30. Kjøkken stenger ofte mellom 14 og 19." }
 
 fraser:
-  - { norsk: Vi har bestilt bord til fem, fransk: Nous avons réservé pour cinq }
-  - { norsk: En flaske av husets rødvin, fransk: "Un pot de rouge, s'il vous plaît" }
-  - { norsk: Hva anbefaler du?, fransk: "Qu'est-ce que vous nous conseillez ?" }
-  - { norsk: En stor øl fra fat / en IPA, fransk: "Une pinte / une IPA, s'il vous plaît" }
-  - { norsk: Regningen, takk, fransk: "L'addition, s'il vous plaît" }
-  - { norsk: Skål!, fransk: "Santé !" }
+  - { norsk: "Vi har bestilt bord til fem", fransk: Nous avons réservé pour cinq }
+  - { norsk: "En flaske av husets rødvin", fransk: "Un pot de rouge, s'il vous plaît" }
+  - { norsk: "Hva anbefaler du?", fransk: "Qu'est-ce que vous nous conseillez ?" }
+  - { norsk: "En stor øl fra fat / en IPA", fransk: "Une pinte / une IPA, s'il vous plaît" }
+  - { norsk: "Regningen, takk", fransk: "L'addition, s'il vous plaît" }
+  - { norsk: "Skål!", fransk: "Santé !" }
 
 retter:
   - { navn: Quenelle de brochet, tekst: Luftig gjeddefarse bakt i krepsesaus (sauce Nantua). Lyons signaturrett. }
@@ -358,6 +358,94 @@ moro:
     sted: Groupama Stadium Décines
   - tittel: Klubb-t-skjorter
     tekst: "Trykk Gourmetklubben-logoen på fem t-skjorter til lørdagens pubrunde. Gjør det også lettere å finne hverandre igjen."
+  - tittel: Ølspa på The Holy Hop
+    tekst: "Lyons første ølspa: privat trebadestamp med humle og malt, fatøl og spekeplanke. Opptil fire per rom, så vi trenger to. Sjekk adressen ved booking, de har midlertidig flyttet."
+    sted: The Holy Hop Beer Spa Lyon
   - tittel: Pubrunde i Saint-Paul
     tekst: "La Mi Graine, La Cave des Voyageurs og flere barer ligger rundt samme torg, 2 min fra senga. Perfekt avslutning lørdag kveld."
     sted: Place Saint-Paul Lyon
+
+# ─────────────────────────────────────────────────────────────
+#  IPA-GUIDEN – barer med skikkelig humle
+# ─────────────────────────────────────────────────────────────
+ipa:
+  ingress: "For oss som ikke kan drikke bare vin. Stedene med flest fat og ferskest humle, sortert etter hvor lett de passer inn i programmet."
+  steder:
+    - navn: Carousel Beer
+      type: Taproom · Croix-Rousse
+      tekst: Rundt 12 roterende fat fra små bryggerier og en kjøl full av ferske bokser. Allerede i programmet lørdag.
+      apent: Kveld alle dager, fra 17:00 fredag og lørdag
+      bestill: Det ferskeste IPA- eller DIPA-fatet. Spør hva som kom inn sist.
+      adresse: 3 place Marcel Bertone, 69004 Lyon
+      sok: Carousel Beer Lyon Croix-Rousse
+    - navn: Dr Yeast
+      type: Ølbar · Croix-Rousse
+      tekst: "Rundt 30 fat i en gammel steinbygning, og raclette så mye du orker. 5 min å gå fra Carousel, så de to kan tas i samme slengen."
+      apent: "Tir–fre 16:00–01:00, lør 11:00–01:00, søn–man 17:00–00:00. Happy hour 17–21."
+      adresse: 6 rue de Cuire, 69004 Lyon
+      sok: Dr Yeast Lyon
+    - navn: Les Fleurs du Malt
+      type: Ølbar og ølbutikk · Vieux Lyon
+      tekst: "Ølkjeller langs Saône, 5 min fra leiligheten. Tønner som stoler, dartskive og ølbutikk der du kan kjøpe med hjem."
+      apent: Alle dager 17:00–02:00
+      adresse: 15 quai Romain Rolland, 69005 Lyon
+      sok: Les Fleurs du Malt Lyon
+    - navn: Malting Pot Part-Dieu
+      type: Bryggeripub · Part-Dieu
+      tekst: "Brygger på stedet, med rundt ti egne øl som roterer. Ligger rett bak Part-Dieu, nær Les Halles Paul Bocuse."
+      apent: Sjekk dagens tider
+      adresse: 2 place de Francfort, 69003 Lyon
+      sok: Malting Pot Lyon Part-Dieu
+      chip: sjekk
+    - navn: Ninkasi Gerland
+      type: Bryggeri · Gerland
+      tekst: Lyons eget bryggeri. Husets IPA-er og sesongøl. Allerede i programmet fredag kveld.
+      apent: Alle dager, kjøkken til 23:00
+      adresse: 267 rue Marcel Mérieux, 69007 Lyon
+      sok: Ninkasi Gerland Lyon
+    - navn: Bar du 405
+      type: Ølbar · Presqu'île
+      tekst: Rundt 50 øl på fat fordelt på to barer i samme gate. Mer bredde enn nisje, men alltid noen IPA-er på listen.
+      apent: Kveld, sjekk dagens tider
+      adresse: 9 rue Constantine, 69001 Lyon
+      sok: Bar du 405 Lyon
+    - navn: La Kave Maltée
+      type: Craft beer-bar · Brotteaux
+      tekst: Ti fat og rundt 50 bokser og flasker fra uavhengige bryggerier, pluss snacks.
+      apent: Sjekk dagens tider
+      adresse: 81 rue Louis Blanc, 69006 Lyon
+      sok: La Kave Maltée Lyon
+      chip: sjekk
+    - navn: Orgao
+      type: Craft beer-bar · Gerland
+      tekst: Rundt 12 fat og ansatte som gjerne forteller om hver øl. Et alternativ hvis Ninkasi er fullt.
+      apent: Sjekk dagens tider
+      adresse: 145 rue Sébastien Gryphe, 69007 Lyon
+      sok: Orgao Lyon
+      chip: sjekk
+    - navn: Bieristan
+      type: Craft beer-bar · Villeurbanne
+      tekst: "Lokalkjent favoritt for IPA-nerder, med øl fra hele regionen og hage bak. Ligger et stykke ut, ca. 20 min med Uber."
+      apent: Kveld, fullt i helgene
+      adresse: 14 rue Paul Lafargue, 69100 Villeurbanne
+      sok: Bieristan Villeurbanne
+
+# ─────────────────────────────────────────────────────────────
+#  TAXI – nummer = det som ringes. Skriv med mellomrom slik det vises.
+# ─────────────────────────────────────────────────────────────
+taxi:
+  ingress: "Trykk for å ringe. Vi er fem, så be om en stor bil: «Un taxi pour cinq personnes, s'il vous plaît.» Oppgi adressen sakte og tydelig."
+  grupper:
+    - tittel: I Lyon
+      nummer:
+        - { navn: Taxi Radio de Lyon, nummer: "04 72 10 86 86" }
+        - { navn: TL Taxis Lyonnais, nummer: "04 78 26 81 81" }
+        - { navn: Allo Taxi, nummer: "04 78 28 23 23" }
+    - tittel: I Beaujolais (Quincié)
+      nummer:
+        - { navn: Taxi Janin, nummer: "04 74 66 08 50" }
+        - { navn: Taxi Roche, nummer: "04 74 04 31 95" }
+  apper: "Uber fungerer godt i Lyon. Velg UberXL for fem personer, eller bestill to vanlige biler. På landet i Beaujolais er det nesten ingen Uber, så ring taxi i god tid."
+  adresser:
+    - { navn: Leiligheten i Lyon, adresse: "4 rue de la Loge, 69005 Lyon" }
+    - { navn: Vingården, adresse: "175 route de Saint-Nizier, 69430 Quincié-en-Beaujolais" }

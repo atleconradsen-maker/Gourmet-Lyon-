@@ -67,6 +67,22 @@
       $('vidar-ingress').textContent = d.vidar.ingress || '';
       $('vidar-steder').innerHTML = (d.vidar.steder || []).map(kort).join('');
     } else { $('vidar').hidden = true; }
+    if (d.ipa) {
+      $('ipa-ingress').textContent = d.ipa.ingress || '';
+      $('ipa-liste').innerHTML = (d.ipa.steder || []).map(kort).join('');
+    } else { $('ipa').hidden = true; }
+    if (d.taxi) {
+      var tel = function (n) { return 'tel:+33' + String(n).replace(/\D/g, '').replace(/^0/, ''); };
+      $('taxi-ingress').textContent = d.taxi.ingress || '';
+      $('taxi-grupper').innerHTML = (d.taxi.grupper || []).map(function (g) {
+        return '<div class="card"><h3>' + esc(g.tittel) + '</h3><div class="taxis">' + (g.nummer || []).map(function (t) {
+          return '<a class="taxi-btn" href="' + tel(t.nummer) + '"><span class="taxi-ikon" aria-hidden="true">☎</span><span><b>' + esc(t.navn) + '</b><span class="mono">' + esc(t.nummer) + '</span></span></a>';
+        }).join('') + '</div></div>';
+      }).join('') +
+      '<div class="card"><h3>Vis sjåføren adressen</h3>' + (d.taxi.adresser || []).map(function (a) {
+        return '<div class="taxi-addr"><span>' + esc(a.navn) + '</span><b>' + esc(a.adresse) + '</b></div>';
+      }).join('') + (d.taxi.apper ? '<p style="color:var(--muted);font-size:.9rem">' + esc(d.taxi.apper) + '</p>' : '') + '</div>';
+    } else { $('taxi').hidden = true; }
     $('moro-liste').innerHTML = (d.moro || []).map(function (m) {
       return '<article class="card idea"><h3>' + esc(m.tittel) + '</h3><p>' + esc(m.tekst) + '</p>' +
         (m.sted ? '<a class="tl-map" href="' + dir(finn(m.sted)) + '" target="_blank" rel="noopener">' + navIkon + 'Veibeskrivelse</a>' : '') + '</article>';
