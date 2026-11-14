@@ -235,3 +235,11 @@ footer img{height:40px;filter:var(--logo-filter);opacity:.8}
 .ma-tittel{font-size:1.5rem;margin:8px 0 14px}
 #ma .grid + .ma-tittel{margin-top:36px}
 .card.ma h3{font-size:1.2rem}
+
+.lokal{margin-top:36px;display:grid;gap:12px;scroll-margin-top:80px}
+.lokal-liste{gap:0}
+.lokal-rad{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:16px;padding:12px 0;border-bottom:1px dashed var(--line)}
+.lokal-rad i{font-style:normal;font-weight:600;color:var(--gamay)}
+.lokal-rad span{color:var(--ink);font-size:.93rem}
+.lokal-tips{padding-top:14px;font-size:.95rem}
+@media (max-width:560px){.lokal-rad{grid-template-columns:1fr;gap:2px}}

@@ -98,6 +98,16 @@
     };
     $('ma-spise').innerHTML = (d.ma_spise || []).map(maKort).join('');
     $('ma-drikke').innerHTML = (d.ma_drikke || []).map(maKort).join('');
+    if (d.lokal) {
+      $('lokal').innerHTML = '<h3 class="ma-tittel">Drikk som en lokal</h3><p class="lead">' + esc(d.lokal.ingress || '') + '</p>' +
+        '<div class="card lokal-liste">' + (d.lokal.regler || []).map(function (r) {
+          return '<div class="lokal-rad"><i>' + esc(r.fransk) + '</i><span>' + esc(r.betyr) + '</span></div>';
+        }).join('') + (d.lokal.tips ? '<p class="lokal-tips"><b>Viktigst:</b> ' + esc(d.lokal.tips) + '</p>' : '') + '</div>';
+    }
+    if (d.gems) {
+      $('gems-ingress').textContent = d.gems.ingress || '';
+      $('gems-liste').innerHTML = (d.gems.steder || []).map(kort).join('');
+    } else { $('gems').hidden = true; }
     $('moro-liste').innerHTML = (d.moro || []).map(function (m) {
       return '<article class="card idea"><h3>' + esc(m.tittel) + '</h3><p>' + esc(m.tekst) + '</p>' +
         '<div class="mapbtns">' + (m.sted ? '<a class="tl-map" href="' + dir(finn(m.sted)) + '" target="_blank" rel="noopener">' + navIkon + 'Veibeskrivelse</a>' : '') +

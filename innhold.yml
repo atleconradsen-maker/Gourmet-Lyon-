@@ -631,3 +631,100 @@ ma_drikke:
   - navn: Morgon og Moulin-à-Vent
     type: Rødvin · Beaujolais cru
     tekst: For ordens skyld. De kraftigste cruene, rett utenfor døra på vingården i Quincié.
+
+# ─────────────────────────────────────────────────────────────
+#  HIDDEN GEMS – det turistene ikke finner
+# ─────────────────────────────────────────────────────────────
+gems:
+  ingress: "Steder lyonnaisene helst holder for seg selv. Flere av dem ligger et steinkast fra leiligheten."
+  steder:
+    - navn: Bon-Secours Bar
+      type: Skjult cocktailbar · Vieux Lyon
+      tekst: "1930-tallsbar gjemt i en hvelvet kjeller under en sjokoladebutikk fra 1500-tallet. Cocktails laget på likører fra Crozet-destilleriet. 3 min fra leiligheten."
+      apent: Fredag, lørdag og mandag 19:00–00:00
+      adresse: 12 rue du Bœuf, 69005 Lyon
+      sok: Ambassade Bonnat Crozet 12 rue du Boeuf Lyon
+    - navn: Jardin Rosa Mir
+      type: Hemmelig hage · Croix-Rousse
+      tekst: "En spansk murer bygde denne hagen stein for stein i bakgården sin fra 1957, med skjell og rullestein. Fredet i dag. Ligger 5 min fra Carousel, så den passer fint lørdag ettermiddag."
+      apent: "Bare lørdager 13:00–18:00, april–oktober. Gratis."
+      adresse: 87 grande rue de la Croix-Rousse, 69004 Lyon
+      sok: Jardin Rosa Mir Lyon
+    - navn: Mur des Canuts
+      type: Gigantisk veggmaleri · Croix-Rousse
+      tekst: "Europas største trompe-l'oeil, 1200 m² med trapper, butikker og folk som ser helt ekte ut. Ta et gruppebilde der det ser ut som vi går opp trappa."
+      apent: Døgnet rundt. Gratis.
+      adresse: 36 boulevard des Canuts, 69004 Lyon
+      sok: Mur des Canuts Lyon
+    - navn: Fresque des Lyonnais
+      type: Veggmaleri · Quai Saint-Vincent
+      tekst: "Trompe-l'oeil med 30 kjente lyonnaiser i vinduene, blant dem Paul Bocuse, Lumière-brødrene og Den lille prinsen. 5 min fra leiligheten, over gangbrua."
+      apent: Døgnet rundt. Gratis.
+      adresse: 2 rue de la Martinière, 69001 Lyon
+      sok: Fresque des Lyonnais
+    - navn: Mâchon kl. 9
+      type: Lyon-tradisjon · bouchon
+      tekst: "Silkevevernes gamle frokost: pølser, terrine, ost og en pot Beaujolais klokka ni om morgenen. Flere bouchons arrangerer mâchon i helgene, blant dem Auberge des Canuts. Det er like lyonsk som det blir."
+      apent: Helgemorgener, sjekk og book
+      adresse: Auberge des Canuts, Lyon
+      sok: Auberge des Canuts Lyon
+      chip: sjekk
+    - navn: Micro Sillon
+      type: Vinbar · Presqu'île
+      tekst: "Vinbar og vinhandel med terrasse på et lite torg, med østers, ost og charcuterie. Lokalfolk, ikke turister."
+      apent: Kveld, sjekk dagens tider
+      adresse: 6 place Fernand Rey, 69001 Lyon
+      sok: Micro Sillon Lyon
+    - navn: La Tête de Lard
+      type: Bouchon for lokalfolk · Presqu'île
+      tekst: "Familiedrevet bouchon med steinvegger og rutete duker. Ekte vare uten turistmenyen."
+      apent: Sjekk og book
+      adresse: 13 rue Désirée, 69001 Lyon
+      sok: La Tête de Lard Lyon
+      chip: book
+    - navn: Soma
+      type: Liten bistro · Saint-Paul
+      tekst: "Middelhavsbistro med åpent kjøkken og kort meny, på torget rett ved leiligheten. Godt alternativ en kveld uten bouchon."
+      apent: Sjekk og book
+      adresse: 9 place Saint-Paul, 69005 Lyon
+      sok: Soma 9 place Saint-Paul Lyon
+    - navn: La Maison de Guignol
+      type: Teater · Vieux Lyon
+      tekst: "Guignol er Lyons egen dukke fra 1808, en frekk silkeveverarbeider som gjør narr av øvrigheten. Dukketeater om dagen, café-théâtre om kvelden. På fransk, men det er moro uansett."
+      apent: Sjekk programmet
+      adresse: 2 montée du Gourguillon, 69005 Lyon
+      sok: Théâtre La Maison de Guignol Lyon
+      nettside: https://www.lamaisondeguignol.fr/
+    - navn: Le Biniou Mercière
+      type: Festbar · Presqu'île
+      tekst: "Institusjon for sene kvelder: temakvelder og DJ som spiller hits fra 80- til 2000-tallet. Allsang garantert."
+      apent: Sene kvelder, særlig i helgene
+      adresse: 53 rue Mercière, 69002 Lyon
+      sok: Le Biniou Mercière Lyon
+    - navn: LOU Rugby
+      type: Sport · Gerland
+      tekst: "Lyons rugbylag spiller i toppdivisjonen Top 14 på det gamle Gerland-stadion. Billigere og mer folkelig enn fotballen. Sjekk om det er hjemmekamp helga 24.–26. september."
+      apent: Sjekk terminlista når den slippes
+      adresse: Matmut Stadium de Gerland, 353 avenue Jean Jaurès, 69007 Lyon
+      sok: Matmut Stadium de Gerland
+      chip: sjekk
+
+# ─────────────────────────────────────────────────────────────
+#  DRIKK SOM EN LOKAL – fransk: det du sier, betyr: hva du får
+# ─────────────────────────────────────────────────────────────
+lokal:
+  ingress: "Slik bestiller lyonnaisene, så vi ikke avslører oss som turister i første setning."
+  regler:
+    - { fransk: "Un café, s'il vous plaît", betyr: "En espresso. «Café» betyr alltid espresso i Frankrike." }
+    - { fransk: "Un noisette", betyr: "Espresso med en skvett melk. Det nærmeste en lokal kommer en latte." }
+    - { fransk: "Un café crème / un grand crème", betyr: "Kaffe med varm melk. Bare til frokost, aldri etter lunsj." }
+    - { fransk: "Un allongé", betyr: "Espresso spedd med vann, det nærmeste vi kommer norsk svart kaffe." }
+    - { fransk: "Au comptoir", betyr: "Drikk kaffen stående i baren. Det er billigere enn ved bordet, og det er der lokalfolka står." }
+    - { fransk: "Un demi", betyr: "25 cl fatøl, standardølen. «Une pinte» er 50 cl og avslører oss som nordmenn." }
+    - { fransk: "Un pot de Côtes-du-Rhône", betyr: "Bouchonens 46 cl-flaske med husets vin. Bestill pot, ikke glass." }
+    - { fransk: "Une carafe d'eau", betyr: "Gratis springvann. Ingen lokal betaler for flaskevann til maten." }
+    - { fransk: "On prend l'apéro ?", betyr: "Apéro mellom 18 og 20 hører med: et glass, noen oliven og saucisson før middag." }
+    - { fransk: "Un communard / un kir", betyr: "Rødvin med cassis, eller hvitvin med cassis. Klassisk apéro i Lyon." }
+    - { fransk: "Un petit jaune", betyr: "Slang for pastis, fordi den blir gul når man har vann i." }
+    - { fransk: "L'addition, s'il vous plaît", betyr: "Regningen kommer aldri av seg selv. Den må vi be om, og det er høflig at de venter." }
+  tips: "Kaffe kommer etter dessert, ikke til. Si alltid «Bonjour» når du går inn i en bar eller butikk. Det er den viktigste regelen av alle."
