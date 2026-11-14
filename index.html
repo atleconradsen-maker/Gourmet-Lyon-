@@ -11,7 +11,7 @@
 <link rel="icon" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,700;0,800;1,500&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
-<link rel="stylesheet" href="style.css?v=1794687832">
+<link rel="stylesheet" href="style.css?v=1794688054">
 </head>
 <body>
 <nav class="nav" aria-label="Hovedmeny">
@@ -25,7 +25,7 @@
       <a class="meny-vidar" href="#vidar"><span>Spesialavdeling</span>Vidars corner</a>
       <div class="meny-grid">
         <div><h4>Turen</h4><a href="#program">Program</a><a href="#bo">Overnatting</a><a href="#kart">Kart</a><a href="#transport">Transport</a></div>
-        <div><h4>Mat og drikke</h4><a href="#mat">Restauranter</a><a href="#ipa">IPA-guiden</a><a href="#barer">Barer og utesteder</a><a href="#leksikon">Leksikon</a></div>
+        <div><h4>Mat og drikke</h4><a href="#mat">Restauranter</a><a href="#ma">Må spise og drikke</a><a href="#ipa">IPA-guiden</a><a href="#barer">Barer og utesteder</a><a href="#leksikon">Leksikon</a></div>
         <div><h4>Nyttig</h4><a href="#taxi">Ring taxi</a><a href="#praktisk">Praktisk info</a><a href="#gutta">Noe for gutta</a><a href="#moro">Forslag til moro</a><a href="#sjekkliste">Sjekkliste</a></div>
       </div>
     </div>
@@ -63,6 +63,14 @@
 <section id="mat"><div class="wrap">
   <div class="sec-head"><span class="eyebrow">Mat og drikke</span><h2>Hvor vi spiser og drikker</h2><p class="lead">Bouchons er Lyons tradisjonelle bistroer. De beste fylles opp, så book bordene i god tid.</p></div>
   <div class="grid" id="steder"></div>
+</div></section>
+
+<section id="ma"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Må spise, må drikke</span><h2>Lyon-sjekklista for ganen</h2><p class="lead">Rettene og dråpene vi ikke drar hjem uten å ha smakt. Og ja, det finnes mer enn rødvin.</p></div>
+  <h3 class="ma-tittel">Må spise</h3>
+  <div class="grid" id="ma-spise"></div>
+  <h3 class="ma-tittel">Må drikke</h3>
+  <div class="grid" id="ma-drikke"></div>
 </div></section>
 
 <section id="ipa"><div class="wrap">
@@ -171,7 +179,7 @@
 </nav>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
-<script src="app.js?v=1794687832"></script>
+<script src="app.js?v=1794688054"></script>
 <script>
 (function () {
   var btn = document.getElementById('menu-btn'), m = document.getElementById('meny');

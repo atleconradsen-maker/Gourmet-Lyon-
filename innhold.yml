@@ -561,3 +561,73 @@ gutta:
         adresse: Cité médiévale, 01800 Pérouges
         sok: Cité médiévale de Pérouges
         nettside: https://www.perouges-bugey-tourisme.com/
+
+# ─────────────────────────────────────────────────────────────
+#  MÅ SPISE / MÅ DRIKKE – "hvor" er et tips til hvor vi får det
+# ─────────────────────────────────────────────────────────────
+ma_spise:
+  - navn: Quenelle de brochet
+    tekst: Luftig gjeddefarse gratinert i krepsesaus (sauce Nantua). Lyons nasjonalrett.
+    hvor: Daniel et Denise, Café Comptoir Abel
+  - navn: Tablier de sapeur
+    tekst: Marinert vom, panert og stekt, servert med sauce gribiche. Testen på om man er en ekte gourmet.
+    hvor: Café Comptoir Abel
+  - navn: Pâté en croûte
+    tekst: Postei i butterdeig med foie gras og kjøttfarse. Kokken bak Daniel et Denise, Joseph Viola, er tidligere verdensmester i faget.
+    hvor: Daniel et Denise
+  - navn: Saucisson brioché
+    tekst: Lyonpølse (ofte med pistasj) bakt inn i brioche. Perfekt til et glass Beaujolais.
+    hvor: Les Halles Paul Bocuse, bouchonene
+  - navn: Salade lyonnaise
+    tekst: "Frisésalat med sprø bacon, krutonger og posjert egg. Lett nok til å gi plass til hovedretten."
+    hvor: Alle bouchons
+  - navn: Poulet de Bresse
+    tekst: Verdens mest berømte kylling, fra Bresse rett nord for Lyon. Gjerne «au vinaigre» eller i kremsaus med morkler.
+    hvor: Têtedoie, Les Halles
+  - navn: Gratin de cardons
+    tekst: Kardon (i slekt med artisjokk) gratinert med beinmarg. Høstsesong, så vi treffer perfekt i september.
+    hvor: Café Comptoir Abel
+  - navn: Cervelle de canut
+    tekst: Fersk ost med urter, sjalott og olje. «Silkevevernes hjerne», men ingen hjerne.
+    hvor: Alle bouchons, som forrett
+  - navn: Saint-Marcellin
+    tekst: Liten, kremet kumelkost som renner ut av skallet når den er moden. Lyons yndlingsost.
+    hvor: La Mère Richard i Les Halles
+  - navn: Tarte aux pralines
+    tekst: Rosa brente mandler smeltet ned i en pai. Lyons signaturdessert.
+    hvor: Bakeriene, Les Halles
+  - navn: Coq au vin de Beaujolais
+    tekst: Hane langtidskokt i Beaujolais-vin med sopp og bacon. Smaker aller best der vinen kommer fra.
+    hvor: Beaujolais, torsdag
+  - navn: Galette au sucre
+    tekst: Tynn brioche-terte med smør og sukker, spesialiteten fra Pérouges.
+    hvor: Pérouges
+
+ma_drikke:
+  - navn: Communard
+    type: Aperitiff · Beaujolais
+    tekst: "Beaujolais-rødvin med en skvett crème de cassis. Den lokale fetteren til kir, og ingen andre steder smaker den bedre."
+  - navn: Beaujolais blanc og Saint-Véran
+    type: Hvitvin · Beaujolais og Mâconnais
+    tekst: Chardonnay fra nabolaget. Frisk, rimelig og perfekt til østers på Les Halles. Pouilly-Fuissé hvis vi vil spandere.
+  - navn: Condrieu
+    type: Hvitvin · Nord-Rhône
+    tekst: "Viognier fra 40 min sør for Lyon. Aprikos, fersken og blomster. Fantastisk til quenelle i krepsesaus."
+  - navn: Crémant de Bourgogne
+    type: Musserende · Burgund
+    tekst: Champagne-metoden til en brøkdel av prisen. Perfekt start på lange lunsjer.
+  - navn: Beaujolais rosé
+    type: Rosé · Beaujolais
+    tekst: Lys og frisk gamay-rosé. Godt på en terrasse i septembersola.
+  - navn: Chartreuse
+    type: Urtelikør · Alpene
+    tekst: "Grønn (55 %) eller gul (40 %), laget av munker i fjellene sørøst for Lyon etter en hemmelig oppskrift med 130 urter. Klassisk digestif etter Têtedoie."
+  - navn: Ninkasi IPA
+    type: Øl · Lyon
+    tekst: Lyons egen IPA. Ta en på Ninkasi Gerland, og sjekk ut IPA-guiden for resten.
+  - navn: Pastis
+    type: Aperitiff · Sør-Frankrike
+    tekst: "Anislikør blandet med kaldt vann. Det man drikker til pétanque langs Saône, enten man liker det eller ikke."
+  - navn: Morgon og Moulin-à-Vent
+    type: Rødvin · Beaujolais cru
+    tekst: For ordens skyld. De kraftigste cruene, rett utenfor døra på vingården i Quincié.

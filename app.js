@@ -92,6 +92,12 @@
           '<div class="grid">' + (g.steder || []).map(kort).join('') + '</div></div>';
       }).join('');
     } else { $('gutta').hidden = true; }
+    var maKort = function (x) {
+      return '<article class="card ma"><span class="kind">' + esc(x.type || '') + '</span><h3>' + esc(x.navn) + '</h3><p>' + esc(x.tekst) + '</p>' +
+        (x.hvor ? '<div class="order"><b>Hvor:</b> ' + esc(x.hvor) + '</div>' : '') + '</article>';
+    };
+    $('ma-spise').innerHTML = (d.ma_spise || []).map(maKort).join('');
+    $('ma-drikke').innerHTML = (d.ma_drikke || []).map(maKort).join('');
     $('moro-liste').innerHTML = (d.moro || []).map(function (m) {
       return '<article class="card idea"><h3>' + esc(m.tittel) + '</h3><p>' + esc(m.tekst) + '</p>' +
         '<div class="mapbtns">' + (m.sted ? '<a class="tl-map" href="' + dir(finn(m.sted)) + '" target="_blank" rel="noopener">' + navIkon + 'Veibeskrivelse</a>' : '') +

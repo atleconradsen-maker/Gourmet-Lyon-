@@ -231,3 +231,7 @@ footer img{height:40px;filter:var(--logo-filter);opacity:.8}
 .poster-band{background:linear-gradient(#0d0906,#1a120b);padding-block:20px 28px;margin-bottom:32px}
 .poster{display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 20px 50px rgb(0 0 0 / .5);border:1px solid #6b5326}
 @media (max-width:760px){.poster-band{padding-block:12px 18px}.poster{border-radius:10px}}
+
+.ma-tittel{font-size:1.5rem;margin:8px 0 14px}
+#ma .grid + .ma-tittel{margin-top:36px}
+.card.ma h3{font-size:1.2rem}
