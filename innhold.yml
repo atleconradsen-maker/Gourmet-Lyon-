@@ -787,30 +787,6 @@ speakeasy:
 hemmelig:
   ingress: "Lyon er en by som gjemmer det beste bak dører, i bakgårder og på tak. Her er stedene som får selv lyonnaisene til å si «det visste jeg ikke»."
   grupper:
-    - tittel: Drinker med utsikt
-      steder:
-        - navn: Le Phosphore
-          type: Vinbar med terrasse · Fourvière
-          tekst: "Têtedoies egen vinbar, i samme hus som restauranten. Panoramaterrasse over hele byen, viner valgt av kokken, tapas og charcuteri. Perfekt aperitiff rett før middagen lørdag: dere trenger bare å gå inn døra ved siden av."
-          apent: "Mandag–lørdag til 01:00. Stengt søndag."
-          adresse: 4 rue du Professeur Pierre Marion, 69005 Lyon
-          sok: Le Phosphore Tetedoie Lyon
-        - navn: Rooftop Maison Nô
-          type: Takbar · Presqu'île
-          tekst: "Øverste etasje på Maison Nô, med utsikt til Fourvière, den rødlyste operakuppelen og klokketårnet på rådhuset. Egne cocktails."
-          apent: "Tirsdag–lørdag om kvelden. Sjekk tider før dere går."
-          adresse: 11 rue du Bât-d'Argent, 69001 Lyon
-          sok: Maison No rooftop Lyon
-          nettside: https://www.maisonno.com/
-          chip: sjekk
-        - navn: Celest, 32. etasje
-          type: Panoramarestaurant · Part-Dieu
-          tekst: "Øverst i «Blyanten», Tour Part-Dieu, som er byens mest kjente skyskraper. Hele Lyon under føttene. Best ved solnedgang."
-          apent: "Middag onsdag–lørdag 19:30–23:00"
-          bestill: "Book bord på forhånd."
-          adresse: 129 rue Servient, 69003 Lyon
-          sok: Celest Radisson Blu Lyon
-          chip: book
     - tittel: Skjulte bakgårder og passasjer
       steder:
         - navn: Cour des Voraces
@@ -862,3 +838,64 @@ hemmelig:
           adresse: 796 route de la Gare, 71570 Romanèche-Thorins
           sok: Hameau Duboeuf Romaneche-Thorins
           nettside: https://www.duboeuf.com/fr/le-parc
+
+# Takbarer. Solnedgang i Lyon i slutten av september er ca. 19:35.
+takbarer:
+  ingress: "Sola går ned rundt 19:35 i slutten av september. Kom en halvtime før for å få bord, og ta med en jakke, for det blir fort kjølig på taket når sola er borte."
+  steder:
+    - navn: Les Muses de l'Opéra
+      type: Takbar · Opéra, 7. etasje
+      tekst: "Øverst i operahuset, under den buede glasskuppelen, med Fourvière rett imot. Bobler, franske viner, cocktails og småretter. Den beste solnedgangsbaren i byen."
+      apent: "Mandag–tirsdag 17:30–23:00, onsdag–fredag 17:30–23:30, lørdag 14:00–23:30. Stengt søndag."
+      adresse: 1 place de la Comédie, 69001 Lyon
+      sok: Les Muses de l'Opera Lyon
+    - navn: Le Melhor
+      type: Takbar · Sofitel Bellecour
+      tekst: "Øverste etasje på Sofitel, med utsikt over Rhône og byen. Elegante cocktails og live jazz. Litt finere stil, så ikke kom i shorts."
+      apent: "Mandag–lørdag 18:00–01:00. Stengt søndag."
+      adresse: 20 quai du Docteur Gailleton, 69002 Lyon
+      sok: Le Melhor Sofitel Lyon
+    - navn: Rooftop Têtedoie og Le Phosphore
+      type: Takterrasse · Fourvière
+      tekst: "Têtedoies takterrasse er åpen april til september, så vi rekker den akkurat. Utsikt over Saône og hele byen, og det er samme hus som middagen lørdag. Er taket stengt, er vinbaren Le Phosphore med terrasse i etasjen under."
+      apent: "Tirsdag–søndag 12:00–16:00 og 19:00–00:00. Book gjerne."
+      adresse: 4 rue du Professeur Pierre Marion, 69005 Lyon
+      sok: Rooftop Tetedoie Lyon
+      chip: book
+    - navn: Les Terrasses du Fort
+      type: Takbar · Croix-Rousse
+      tekst: "Takterrasse på det gamle Fort Saint-Laurent, med utsikt over takene i hele byen. Håndverksøl, naturvin og dipp fra småprodusenter i Croix-Rousse. Passer fint før eller etter Carousel Beer."
+      apent: "Terrassen er åpen i godværssesongen. Sjekk før dere går."
+      adresse: Place Bellevue, 69001 Lyon
+      sok: Fort Saint-Laurent Lyon rooftop
+      nettside: https://www.hotelfortsaintlaurent.com/bien-etre
+      chip: sjekk
+    - navn: Rooftop Maison Nô
+      type: Takbar · Presqu'île
+      tekst: "Øverste etasje på Maison Nô, med utsikt til Fourvière, den rødlyste operakuppelen og klokketårnet på rådhuset. Egne cocktails og lokale viner."
+      apent: "Tirsdag–lørdag om kvelden. Sjekk tider før dere går."
+      adresse: 11 rue du Bât-d'Argent, 69001 Lyon
+      sok: Maison No rooftop Lyon
+      nettside: https://www.maisonno.com/
+      chip: sjekk
+    - navn: Mama Shelter
+      type: Takterrasse · Guillotière
+      tekst: "Avslappet og leken, med DJ eller live musikk om kvelden. Mindre utsikt enn de andre, men best stemning hvis kvelden skal bli lang."
+      apent: "Alle dager 12:00–15:00 og 19:00–00:00"
+      adresse: 13 rue Domer, 69007 Lyon
+      sok: Mama Shelter Lyon
+    - navn: Celest, 32. etasje
+      type: Panoramarestaurant · Part-Dieu
+      tekst: "Øverst i «Blyanten», Tour Part-Dieu, som er byens mest kjente skyskraper. Hele Lyon under føttene. Best ved solnedgang."
+      apent: "Middag onsdag–lørdag 19:30–23:00"
+      bestill: "Book bord på forhånd."
+      adresse: 129 rue Servient, 69003 Lyon
+      sok: Celest Radisson Blu Lyon
+      chip: book
+    - navn: Le Sucre
+      type: Klubb på taket · Confluence
+      tekst: "Når solnedgangen er over og kvelden skal bli natt. Takterrasse og klubb på den gamle sukkerfabrikken, med nesten 360 graders utsikt."
+      apent: "Fredag og lørdag 23:00–05:00"
+      adresse: 50 quai Rambaud, 69002 Lyon
+      sok: Le Sucre Lyon
+      nettside: https://le-sucre.eu/
