@@ -310,7 +310,7 @@ barer:
 #  VIDARS CORNER
 # ─────────────────────────────────────────────────────────────
 vidar:
-  ingress: "Kurert av og for vår egen kulturattaché. Gentlemen's clubs i Lyon, for de som synes kvelden er ung. Sjekk åpningstider før dere drar, og husk at det er strengt «se, men ikke rør»."
+  ingress: "Gjengens egen gladgutt har gjort grundig feltarbeid og funnet noen steder der slitne gourmeter kan slappe av i hyggelig dameselskap etter en lang dag med quenelle og cru. Champagnen er dyr, musikken er høy og blikkene er gratis. Husk regelen: se, smil og tips, men ikke rør. Hva som skjer i Vidars corner, blir i Vidars corner."
   steder:
     - navn: Bus Paradise
       type: Gentlemen's club · Cité Internationale
