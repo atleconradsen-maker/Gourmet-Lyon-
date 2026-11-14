@@ -218,3 +218,10 @@ footer img{height:40px;filter:var(--logo-filter);opacity:.8}
 .nav .meny-grid a{font-size:1.02rem;white-space:normal}
 .nav .meny-grid a:hover{color:var(--gamay)}
 @media (max-width:760px){.nav .meny .wrap{padding-bottom:calc(90px + env(safe-area-inset-bottom,0px))}}
+
+/* noe for gutta */
+.gutta{display:grid;gap:40px}
+.gutt{display:grid;gap:14px}
+.gutt-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px}
+.gutt-navn{font-family:var(--f-display);font-size:1.8rem;font-weight:800}
+.gutt-rolle{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;padding:4px 10px;border-radius:999px;background:var(--saone-soft);color:var(--saone)}

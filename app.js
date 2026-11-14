@@ -83,6 +83,13 @@
         return '<div class="taxi-addr"><span>' + esc(a.navn) + '</span><b>' + esc(a.adresse) + '</b></div>';
       }).join('') + (d.taxi.apper ? '<p style="color:var(--muted);font-size:.9rem">' + esc(d.taxi.apper) + '</p>' : '') + '</div>';
     } else { $('taxi').hidden = true; }
+    if (d.gutta) {
+      $('gutta-liste').innerHTML = d.gutta.map(function (g) {
+        return '<div class="gutt"><div class="gutt-head"><span class="gutt-navn">' + esc(g.person) + '</span><span class="gutt-rolle">' + esc(g.rolle) + '</span></div>' +
+          (g.ingress ? '<p class="lead">' + esc(g.ingress) + '</p>' : '') +
+          '<div class="grid">' + (g.steder || []).map(kort).join('') + '</div></div>';
+      }).join('');
+    } else { $('gutta').hidden = true; }
     $('moro-liste').innerHTML = (d.moro || []).map(function (m) {
       return '<article class="card idea"><h3>' + esc(m.tittel) + '</h3><p>' + esc(m.tekst) + '</p>' +
         (m.sted ? '<a class="tl-map" href="' + dir(finn(m.sted)) + '" target="_blank" rel="noopener">' + navIkon + 'Veibeskrivelse</a>' : '') + '</article>';

@@ -449,3 +449,98 @@ taxi:
   adresser:
     - { navn: Leiligheten i Lyon, adresse: "4 rue de la Loge, 69005 Lyon" }
     - { navn: Vingården, adresse: "175 route de Saint-Nizier, 69430 Quincié-en-Beaujolais" }
+
+# ─────────────────────────────────────────────────────────────
+#  NOE FOR GUTTA – ett avsnitt per person
+# ─────────────────────────────────────────────────────────────
+gutta:
+  - person: Dag
+    rolle: Bilmannen
+    ingress: "Volvo, Zeekr og Polestar til daglig. Visste du at Renault Trucks også er en del av Volvo-konsernet, med hovedkontor rett utenfor Lyon? Her er stedene for en ekte bilmann."
+    steder:
+      - navn: Musée de l'Automobile Henri Malartre
+        type: Bilmuseum · Rochetaillée-sur-Saône
+        tekst: "Rundt hundre kjøretøy i et slott ved Saône: biler, motorsykler og trikker. Her står Hitlers paradebil fra Mercedes, Lumière-brødrenes Vivastella og biler fra glemte Lyon-merker som Rochet-Schneider og Luc Court. Verkstedet holder de fleste i kjørbar stand."
+        apent: "Onsdag–søndag 10:30–18:00 (siste billett 17:00). 6 €."
+        bestill: "Ligger 15 min nord for Lyon. Passer på torsdag med leiebilen, på vei fra flyplassen til Beaujolais."
+        adresse: 645 rue du Musée, 69270 Rochetaillée-sur-Saône
+        sok: Musée de l'Automobile Henri Malartre
+
+  - person: Morten J
+    rolle: Lysdesigneren
+    ingress: "Lyon kaller seg lysets by. Byen har hatt en egen lysplan siden 1989, med over 300 monumenter, broer og fasader som er lyssatt hver kveld. Fête des Lumières er i desember, men i september har vi lyset helt for oss selv."
+    steder:
+      - navn: Kveldsvandring i lysbyen
+        type: Lysvandring · Vieux Lyon og Presqu'île
+        tekst: "Start ved Palais de Justice med de 24 søylene, som har tre ulike lysprogram hver kveld, rett ved leiligheten. Gå langs Saône (gult lys) over til Rhône (hvitt lys), videre til Opéra, som lyser rødt på forestillingskvelder, og Place des Jacobins. Avslutt med Fourvière lyst opp over byen."
+        apent: Fra skumring, ca. 19:45 i slutten av september
+        bestill: Ta den etter middag fredag eller lørdag. Ca. 1 time i rolig tempo.
+        adresse: Start ved Palais de Justice, 24 quai Romain Rolland, 69005 Lyon
+        sok: Palais de Justice historique Lyon
+      - navn: Musée Lumière
+        type: Film- og lysmuseum · Monplaisir
+        tekst: "I villaen til familien Lumière, der brødrene oppfant kinematografen i 1895. Museum om lys, bilde og film, med kino i hangaren der verdens første film ble spilt inn."
+        apent: Tirsdag–søndag 10:00–18:30
+        adresse: 25 rue du Premier Film, 69008 Lyon
+        sok: Musée Lumière Lyon
+      - navn: Fourvière på innsiden
+        type: Guidet tur · Fourvière
+        tekst: "Omvisning over hvelvene, i stålkonstruksjonen og opp i observatorietårnet med utsikt over hele byen. Kveldsturene går bare om vinteren, men dagturene går også i september."
+        apent: Sjekk datoer på booking.fourviere.org. Ca. 18 €.
+        adresse: 8 place de Fourvière, 69005 Lyon
+        sok: Basilique Notre-Dame de Fourvière
+        chip: sjekk
+
+  - person: Morten G
+    rolle: Etterforskeren
+    ingress: "Etterforskningsleder i Follo. Lyon har mer politihistorie enn de fleste byer: Interpol har hovedkontoret sitt her, og Klaus Barbie, «slakteren fra Lyon», ble dømt i retten rett ved leiligheten vår."
+    steder:
+      - navn: Palais de Justice historique
+        type: Rettsbygning · Vieux Lyon
+        tekst: "Den gamle rettsbygningen med de 24 søylene. Her ble Gestapo-sjefen Klaus Barbie dømt til livstid i 1987. 3 min å gå fra leiligheten."
+        apent: Se fasaden når som helst. Omvisninger inne ved spesielle anledninger.
+        adresse: 24 quai Romain Rolland, 69005 Lyon
+        sok: Palais de Justice historique Lyon
+      - navn: Mémorial national de la prison de Montluc
+        type: Fengsel og minnested · Lyon 3e
+        tekst: "Militærfengsel der Gestapo holdt motstandsfolk, blant dem Jean Moulin. Cellene står som de var. Sterkt og stillferdig."
+        apent: "Onsdag–fredag 14:00–18:00, lørdag 10:00–12:30 og 14:00–18:00. Gratis."
+        adresse: 1 rue Jeanne Hachette, 69003 Lyon
+        sok: Mémorial national de la prison de Montluc
+      - navn: CHRD, i det gamle Gestapo-hovedkvarteret
+        type: Museum · Lyon 7e
+        tekst: "Senter for motstandskampen, i bygningen der Barbie hadde kontor og avhørsrom. Passer godt sammen med Montluc."
+        apent: Sjekk tider på chrd.lyon.fr
+        adresse: 14 avenue Berthelot, 69007 Lyon
+        sok: CHRD Lyon
+        chip: sjekk
+      - navn: Interpol, hovedkvarteret
+        type: Bare utenfra · Cité Internationale
+        tekst: "Interpols generalsekretariat ligger langs Rhône. Ingen omvisning, men et obligatorisk gruppebilde ved gjerdet. Ligger forresten et steinkast fra Bus Paradise i Vidars corner."
+        apent: Kun utenfra
+        adresse: 200 quai Charles de Gaulle, 69006 Lyon
+        sok: Interpol General Secretariat Lyon
+
+  - person: Vidar
+    rolle: Tømreren
+    ingress: "Vieux Lyon er et av Europas største renessansekvarter, med bjelkelag og takkonstruksjoner fra 1400- og 1500-tallet. Her er godbitene for en fagmann. Vidar har dessuten sitt eget hjørne lenger opp på siden."
+    steder:
+      - navn: Tour Rose, 16 rue du Bœuf
+        type: Renessansegård · Vieux Lyon
+        tekst: "Byens mest kjente bakgård, med et rosa trappetårn og gallerier i flere etasjer. 5 min å gå fra leiligheten."
+        apent: Gården er som regel åpen på dagtid
+        adresse: 16 rue du Bœuf, 69005 Lyon
+        sok: Tour Rose 16 rue du Boeuf Lyon
+      - navn: Traboules og takbjelker i Saint-Jean
+        type: Vandring · Vieux Lyon
+        tekst: "Gå inn portene i rue Saint-Jean og rue du Bœuf. Se opp: synlige bjelkelag, utkragede gallerier og trappetårn. 54 rue Saint-Jean er den lengste traboulen."
+        apent: Dagtid, mange porter er låst om kvelden
+        adresse: 54 rue Saint-Jean, 69005 Lyon
+        sok: 54 Rue Saint-Jean Lyon
+      - navn: Pérouges
+        type: Middelalderby · 40 min øst for Lyon
+        tekst: "Perfekt bevart middelalderby med bindingsverkshus og brostein, brukt i en rekke filmer. Kjent for galette au sucre. Bare 20 min fra flyplassen."
+        apent: Byen er åpen hele døgnet
+        bestill: "En idé til torsdag: kjør fra flyplassen til Pérouges for lunsj, og så videre til Beaujolais (ca. 1 t 15)."
+        adresse: Cité médiévale, 01800 Pérouges
+        sok: Cité médiévale de Pérouges
