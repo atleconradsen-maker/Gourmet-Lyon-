@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gourmetklubben i Lyon</title>
+<meta name="description" content="Gourmetklubbens tur til Lyon og Beaujolais: program, mat, overnatting, kart og praktisk info.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,700;0,800;1,500&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav" aria-label="Hovedmeny">
+  <div class="wrap">
+    <a href="#top" aria-label="Til toppen"><img src="logo.png" alt="Gourmetklubben"></a>
+    <ul>
+      <li><a href="#program">Program</a></li>
+      <li><a href="#mat">Mat og drikke</a></li>
+      <li><a href="#bo">Overnatting</a></li>
+      <li><a href="#kart">Kart</a></li>
+      <li><a href="#transport">Transport</a></li>
+      <li><a href="#leksikon">Leksikon</a></li>
+      <li><a href="#praktisk">Praktisk</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <img class="hero-logo" src="logo.png" alt="Gourmetklubben">
+    <div style="display:grid;gap:14px">
+      <span class="eyebrow" data-f="tur.undertittel"></span>
+      <h1 id="tittel"></h1>
+      <p class="lead" data-f="tur.ingress"></p>
+    </div>
+    <div class="facts" id="fakta"></div>
+    <div class="btns">
+      <a class="btn primary" href="#program">Se programmet</a>
+      <a class="btn ghost" href="#praktisk">Praktisk info</a>
+      <a class="btn ghost" href="#sjekkliste">Sjekkliste</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="program"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Program</span><h2>Fire dager, dag for dag</h2><p class="lead">Tidene er veiledende. Lange lunsjer er planlagt med vilje.</p></div>
+  <div id="merknad"></div>
+  <div class="days" id="dager"></div>
+</div></section>
+
+<section id="mat"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Mat og drikke</span><h2>Hvor vi spiser og drikker</h2><p class="lead">Bouchons er Lyons tradisjonelle bistroer. De beste fylles opp, så book bordene i god tid.</p></div>
+  <div class="grid" id="steder"></div>
+</div></section>
+
+<section id="bo"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Overnatting</span><h2>Vi bor på</h2></div>
+  <div class="stay" id="overnatting"></div>
+</div></section>
+
+<section id="kart"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Kart</span><h2>Lyon på ett ark</h2><p class="lead">Skjematisk kart, ikke målestokk. Trykk på et sted for å åpne det i Google Maps.</p></div>
+  <div class="mapbox">
+    <div class="map" role="img" aria-label="Skjematisk kart over Lyon med Saône og Rhône og stedene vi besøker">
+      <svg viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg">
+        <rect width="400" height="520" fill="var(--land)"/>
+        <path d="M150 0 C160 60 150 110 160 160 C170 210 150 250 160 300 C168 350 190 400 215 470" fill="none" stroke="var(--river)" stroke-width="16" stroke-linecap="round"/>
+        <path d="M400 70 C340 110 300 150 290 210 C280 270 270 330 250 400 C240 440 228 460 215 470 L210 520" fill="none" stroke="var(--river)" stroke-width="22" stroke-linecap="round"/>
+        <g fill="var(--muted)" font-size="10" font-family="Work Sans,sans-serif">
+          <text x="118" y="120" font-size="11" font-family="IBM Plex Mono,monospace" transform="rotate(-80 118 120)">SAÔNE</text>
+          <text x="318" y="300" font-size="11" font-family="IBM Plex Mono,monospace" transform="rotate(-80 318 300)">RHÔNE</text>
+          <text x="40" y="215">FOURVIÈRE</text><text x="40" y="285">VIEUX LYON</text>
+          <text x="195" y="60">CROIX-ROUSSE</text><text x="200" y="290">PRESQU'ÎLE</text>
+          <text x="320" y="200">PART-DIEU</text><text x="300" y="440">GERLAND</text>
+        </g>
+        <g id="naler" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600" text-anchor="middle"></g>
+      </svg>
+    </div>
+    <ol class="legend" id="tegnforklaring"></ol>
+  </div>
+</div></section>
+
+<section id="transport"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Transport</span><h2>Slik kommer vi oss rundt</h2><p class="lead" data-f="transport.ingress"></p></div>
+  <div class="legs" id="strekninger"></div>
+</div></section>
+
+<section id="leksikon"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Leksikon</span><h2>Hva er det vi spiser og drikker?</h2><p class="lead">Lynkurs i bouchon-menyen og Beaujolais-kartet, så dere vet hva dere bestiller.</p></div>
+  <div class="lex">
+    <div class="card"><h3>På bouchon-menyen</h3><dl id="retter"></dl></div>
+    <div class="card">
+      <h3>De ti Beaujolais-cruene</h3>
+      <p>Beaujolais er gamay-drue. De beste vinene kommer fra ti landsbyer i nord, cruene. Fra nord mot sør:</p>
+      <div class="crus"><span>Saint-Amour</span><span>Juliénas</span><span>Chénas</span><span>Moulin-à-Vent</span><span>Fleurie</span><span>Chiroubles</span><span>Morgon</span><span>Régnié</span><span class="near">Côte de Brouilly</span><span class="near">Brouilly</span></div>
+      <p style="color:var(--muted);font-size:.88rem">Uthevet: rett utenfor vingården i Quincié. Moulin-à-Vent og Morgon er de kraftigste og tåler lagring. Fleurie og Chiroubles er lettere og mer blomstrete.</p>
+      <dl style="margin-top:8px">
+        <dt>Beaujolais Nouveau</dt><dd>Ung vin som slippes tredje torsdag i november. Gøy, men ikke det vi kom for.</dd>
+        <dt>Crémant de Bourgogne</dt><dd>Musserende fra nabolaget. Fin start på en lang lunsj.</dd>
+      </dl>
+    </div>
+  </div>
+</div></section>
+
+<section id="praktisk"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Praktisk</span><h2>Godt å vite</h2></div>
+  <div class="prac" id="praktiskgrid"></div>
+</div></section>
+
+<section id="sjekkliste"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Sjekkliste</span><h2>Før vi drar</h2><p class="lead">Huk av etter hvert. Avkrysningene lagres bare på din egen telefon.</p></div>
+  <ul class="todo" id="todo"></ul>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <img src="logo.png" alt="Gourmetklubben">
+  <p>Lyon og Beaujolais, torsdag til søndag. Fem karer, ti viner og minst like mange IPA-er.</p>
+  <p>Åpningstider kan endre seg. Sjekk stedene før dere går, og book alle bord på forhånd.</p>
+</div></footer>
+
+<nav class="bnav" aria-label="Snarveier">
+  <a href="#program"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>Program</a>
+  <a href="#mat"><svg viewBox="0 0 24 24"><path d="M7 3v8a2 2 0 0 0 4 0V3M9 11v10M17 3c-2 2-2 6 0 8v10"/></svg>Mat</a>
+  <a href="#kart"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Kart</a>
+  <a href="#praktisk"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v.01M12 11v5"/></svg>Praktisk</a>
+  <a href="#sjekkliste"><svg viewBox="0 0 24 24"><path d="M5 12l4 4L19 6"/></svg>Sjekk</a>
+</nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
