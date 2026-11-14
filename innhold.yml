@@ -728,3 +728,56 @@ lokal:
     - { fransk: "Un petit jaune", betyr: "Slang for pastis, fordi den blir gul når man har vann i." }
     - { fransk: "L'addition, s'il vous plaît", betyr: "Regningen kommer aldri av seg selv. Den må vi be om, og det er høflig at de venter." }
   tips: "Kaffe kommer etter dessert, ikke til. Si alltid «Bonjour» når du går inn i en bar eller butikk. Det er den viktigste regelen av alle."
+
+# Skjulte barer (speakeasies). Legg til flere med samme oppsett.
+speakeasy:
+  ingress: "Barer uten skilt, med hemmelige dører og bartendere som tar cocktails på alvor. Det er lurt å komme tidlig eller ringe og reservere, for de er små og fylles fort."
+  steder:
+    - navn: L'Antiquaire
+      type: Speakeasy · Pentes de la Croix-Rousse
+      tekst: "Ser ut som en gammel antikvitetsbutikk utenfra. Innenfor er det Forbudstid-stemning og noen av byens beste cocktails."
+      apent: "Alle dager fra 18:00, til 03:00 fredag og lørdag"
+      bestill: "Inngang: Ring på døra og vent på å bli sluppet inn."
+      adresse: 20 rue Hippolyte Flandrin, 69001 Lyon
+      sok: L'Antiquaire Lyon
+    - navn: Soda Bar
+      type: Speakeasy · Presqu'île
+      tekst: "Inngangen er gjennom sykkelbutikken Baroudeur Cycles. Bak verkstedet åpner det seg en bar i 70-tallsstil med god cocktailmeny."
+      apent: "Alle dager 18:00–01:00, torsdag til 02:00, fredag og lørdag til 03:00"
+      bestill: "Inngang: Gå inn i sykkelbutikken og videre bakover."
+      adresse: 7 rue de la Martinière, 69001 Lyon
+      sok: Soda Bar 7 rue de la Martiniere Lyon
+    - navn: La Baignoire
+      type: Speakeasy · Guillotière
+      tekst: "1930-tallsbar i art deco med Peaky Blinders-stemning. Lekre cocktails i skinnstoler og dempet lys."
+      apent: "Tirsdag–torsdag 18:00–01:00, fredag og lørdag 18:00–02:30"
+      bestill: "Inngang: Se etter en anonym dør uten skilt."
+      adresse: 11 rue des Trois Rois, 69007 Lyon
+      sok: La Baignoire bar Lyon
+    - navn: Le Fantôme de l'Opéra
+      type: Speakeasy · Opéra
+      tekst: "Tjuetallsbar med grammofon, fløyelsgardiner og cocktails servert i hodeskaller og enhjørningsglass. Teatralsk på den gode måten."
+      apent: "Tirsdag–lørdag 18:00–01:00"
+      adresse: 19 rue Royale, 69001 Lyon
+      sok: Le Fantome de l'Opera bar Lyon
+    - navn: Le Passage
+      type: Cocktailbar · Cordeliers
+      tekst: "Skjult i en smal gate, med fløyel, art deco og jazz. Rolig og elegant, fin for en siste drink."
+      apent: "Tirsdag–torsdag 19:00–00:00, fredag og lørdag 19:00–02:00"
+      adresse: 8 rue du Plâtre, 69001 Lyon
+      sok: Le Passage bar 8 rue du Platre Lyon
+    - navn: Le Secret
+      type: Hemmelig bar · Terreaux
+      tekst: "Den mest hemmelige av dem alle. Baren ligger bak skjønnhetssalongen Les Six Bar & Beauté, og du kommer inn gjennom en speilhylle som glir til side. Jazz fram til 22:30, så DJ."
+      apent: "Kveldstid fra 19:00. Sjekk før dere går."
+      bestill: "Inngang: Lyset «Le Secret» på gata må være tent. Ring på, gå gjennom salongen og vent ved speilet."
+      adresse: rue Joseph Serlin, 69001 Lyon
+      sok: Le Secret bar Lyon
+      chip: sjekk
+    - navn: Bon-Secours Bar
+      type: Skjult kjellerbar · Vieux Lyon
+      tekst: "Hvelvet kjeller under en sjokoladebutikk fra 1500-tallet, med cocktails på likører fra Crozet. Bare 3 minutter fra leiligheten."
+      apent: "Fredag, lørdag og mandag 19:00–00:00. Sjekk før dere går."
+      bestill: "Inngang: Gå gjennom sjokoladebutikken og ned trappa."
+      adresse: 12 rue du Bœuf, 69005 Lyon
+      sok: Ambassade Bonnat Crozet 12 rue du Boeuf Lyon

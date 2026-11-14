@@ -108,6 +108,10 @@
       $('gems-ingress').textContent = d.gems.ingress || '';
       $('gems-liste').innerHTML = (d.gems.steder || []).map(kort).join('');
     } else { $('gems').hidden = true; }
+    if (d.speakeasy) {
+      $('speakeasy-ingress').textContent = d.speakeasy.ingress || '';
+      $('speakeasy-liste').innerHTML = (d.speakeasy.steder || []).map(kort).join('');
+    } else { $('speakeasy').hidden = true; }
     $('moro-liste').innerHTML = (d.moro || []).map(function (m) {
       return '<article class="card idea"><h3>' + esc(m.tittel) + '</h3><p>' + esc(m.tekst) + '</p>' +
         '<div class="mapbtns">' + (m.sted ? '<a class="tl-map" href="' + dir(finn(m.sted)) + '" target="_blank" rel="noopener">' + navIkon + 'Veibeskrivelse</a>' : '') +
