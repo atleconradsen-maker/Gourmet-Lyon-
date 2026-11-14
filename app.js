@@ -10,9 +10,12 @@
   var dir = function (q) { return 'https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(q); };
   var pinIkon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>';
   var navIkon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8z"/></svg>';
-  var knapper = function (q) {
+  var webIkon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>';
+  var trygg = function (u) { return /^https?:\/\//.test(u || '') ? u : ''; };
+  var webKnapp = function (u) { return trygg(u) ? '<a class="mapbtn" href="' + esc(u) + '" target="_blank" rel="noopener">' + webIkon + 'Nettside</a>' : ''; };
+  var knapper = function (q, url) {
     return '<div class="mapbtns"><a class="mapbtn primary" href="' + dir(q) + '" target="_blank" rel="noopener">' + navIkon + 'Veibeskrivelse</a>' +
-      '<a class="mapbtn" href="' + maps(q) + '" target="_blank" rel="noopener">' + pinIkon + 'Vis i kart</a></div>';
+      '<a class="mapbtn" href="' + maps(q) + '" target="_blank" rel="noopener">' + pinIkon + 'Vis i kart</a>' + webKnapp(url) + '</div>';
   };
   var chipNavn = { book: 'Book', ipa: 'IPA', sjekk: 'Sjekk åpent' };
   var chipKlasse = { book: 'book', ipa: 'beer', sjekk: 'check' };
@@ -58,8 +61,7 @@
         (s.apent ? '<div class="order"><b>Åpent:</b> ' + esc(s.apent) + '</div>' : '') +
         (s.bestill ? '<div class="order"><b>Tips:</b> ' + esc(s.bestill) + '</div>' : '') +
         (s.adresse ? '<span class="addr">' + esc(s.adresse) + '</span>' : '') +
-        knapper(s.sok || s.navn) +
-        (s.nettside ? '<div class="links"><a href="' + esc(s.nettside) + '" target="_blank" rel="noopener">Nettside ↗</a></div>' : '') + '</article>';
+        knapper(s.sok || s.navn, s.nettside) + '</article>';
     };
     $('steder').innerHTML = (d.steder || []).map(kort).join('');
     $('barer-liste').innerHTML = (d.barer || []).map(kort).join('');
@@ -92,13 +94,14 @@
     } else { $('gutta').hidden = true; }
     $('moro-liste').innerHTML = (d.moro || []).map(function (m) {
       return '<article class="card idea"><h3>' + esc(m.tittel) + '</h3><p>' + esc(m.tekst) + '</p>' +
-        (m.sted ? '<a class="tl-map" href="' + dir(finn(m.sted)) + '" target="_blank" rel="noopener">' + navIkon + 'Veibeskrivelse</a>' : '') + '</article>';
+        '<div class="mapbtns">' + (m.sted ? '<a class="tl-map" href="' + dir(finn(m.sted)) + '" target="_blank" rel="noopener">' + navIkon + 'Veibeskrivelse</a>' : '') +
+        (trygg(m.nettside) ? '<a class="tl-map" href="' + esc(m.nettside) + '" target="_blank" rel="noopener">' + webIkon + 'Nettside</a>' : '') + '</div></article>';
     }).join('');
 
     $('overnatting').innerHTML = (d.overnatting || []).map(function (o) {
       return '<article class="card"><span class="kind">' + esc(o['når']) + '</span><h3>' + esc(o.navn) + '</h3><p>' + esc(o.tekst) + '</p>' +
         '<ul>' + (o.punkter || []).map(function (p) { return '<li>' + esc(p) + '</li>'; }).join('') + '</ul>' +
-        knapper(o.sok || o.navn) + '</article>';
+        knapper(o.sok || o.navn, o.nettside) + '</article>';
     }).join('');
 
     var farge = { mat: 'var(--gamay)', ol: 'var(--gold)', hjem: 'var(--saone)' };

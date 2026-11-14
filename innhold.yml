@@ -107,6 +107,7 @@ steder:
     bestill: pâté en croûte, quenelle de brochet, en pot Côtes du Rhône.
     adresse: 36 rue Tramassac, 69005 Lyon
     sok: Daniel et Denise Saint-Jean Lyon
+    nettside: https://danieletdenise.fr/daniel-denise-saint-jean/
     kart: { nr: 1, x: 128, y: 300, type: mat }
 
   - navn: Musée des Confluences
@@ -116,6 +117,7 @@ steder:
     bestill: billetter på nett på forhånd.
     adresse: 86 quai Perrache, 69002 Lyon
     sok: Musée des Confluences Lyon
+    nettside: https://www.museedesconfluences.fr/
     kart: { nr: 2, x: 232, y: 455, type: mat }
 
   - navn: Bateau Bellona
@@ -125,6 +127,7 @@ steder:
     bestill: noe kaldt på terrassen. Sjekk åpningstider før dere går.
     adresse: 84 quai Perrache, 69002 Lyon
     sok: Bateau Bellona Lyon
+    nettside: https://www.bateaubellona.fr/
     kart: { nr: 3, x: 258, y: 480, type: ol }
 
   - navn: Ninkasi Gerland
@@ -134,6 +137,7 @@ steder:
     bestill: en smaksplanke med husets IPA-er.
     adresse: 267 rue Marcel Mérieux, 69007 Lyon
     sok: Ninkasi Gerland Lyon
+    nettside: https://www.ninkasi.fr/lieux/ninkasi-gerland/
     kart: { nr: 4, x: 300, y: 420, type: ol }
 
   - navn: Les Halles Paul Bocuse
@@ -143,6 +147,7 @@ steder:
     bestill: østers og Mâcon blanc, saucisson fra Sibilia, ost fra Mère Richard.
     adresse: 102 cours Lafayette, 69003 Lyon
     sok: Les Halles de Lyon Paul Bocuse
+    nettside: https://www.halles-de-lyon-paulbocuse.com/
     kart: { nr: 5, x: 342, y: 220, type: mat }
 
   - navn: Café Comptoir Abel
@@ -161,6 +166,7 @@ steder:
     bestill: kabelbanen opp, og gå ned trappene gjennom hagene.
     adresse: 8 place de Fourvière, 69005 Lyon
     sok: Basilique Notre-Dame de Fourvière
+    nettside: https://www.fourviere.org/
     kart: { nr: 7, x: 95, y: 235, type: mat }
 
   - navn: Carousel Beer
@@ -179,6 +185,7 @@ steder:
     bestill: smaksmenyen med vinpakke, og ta en dram på terrassen etterpå.
     adresse: 4 rue du Professeur Pierre Marion, 69005 Lyon
     sok: Têtedoie Lyon
+    nettside: https://tetedoie.fr/
     kart: { nr: 9, x: 112, y: 200, type: mat }
 
   - navn: Boulangerie Saint-Vincent
@@ -305,6 +312,7 @@ barer:
     apent: "Fredag og lørdag 23:00–05:00"
     adresse: 50 quai Rambaud, 69002 Lyon
     sok: Le Sucre Lyon
+    nettside: https://le-sucre.eu/
 
 # ─────────────────────────────────────────────────────────────
 #  VIDARS CORNER
@@ -351,6 +359,7 @@ moro:
     tekst: "Lyons store matmarked langs Saône, 5 min fra leiligheten. Østers og hvitvin til frokost før flyet."
     sted: Marché Saint-Antoine Lyon
   - tittel: Båttur på Saône
+    nettside: https://www.lesbateauxlyonnais.com/
     tekst: "Les Bateaux Lyonnais kjører sightseeing og lunsjcruise fra kaiene i sentrum. Rolig avslutning på en lang lunsj."
     sted: Les Bateaux Lyonnais
   - tittel: Fotballkamp med Olympique Lyonnais
@@ -361,6 +370,7 @@ moro:
   - tittel: Ølspa på The Holy Hop
     tekst: "Lyons første ølspa: privat trebadestamp med humle og malt, fatøl og spekeplanke. Opptil fire per rom, så vi trenger to. Sjekk adressen ved booking, de har midlertidig flyttet."
     sted: The Holy Hop Beer Spa Lyon
+    nettside: https://www.theholyhop.com/
   - tittel: Pubrunde i Saint-Paul
     tekst: "La Mi Graine, La Cave des Voyageurs og flere barer ligger rundt samme torg, 2 min fra senga. Perfekt avslutning lørdag kveld."
     sted: Place Saint-Paul Lyon
@@ -403,6 +413,7 @@ ipa:
       apent: Alle dager, kjøkken til 23:00
       adresse: 267 rue Marcel Mérieux, 69007 Lyon
       sok: Ninkasi Gerland Lyon
+      nettside: https://www.ninkasi.fr/lieux/ninkasi-gerland/
     - navn: Bar du 405
       type: Ølbar · Presqu'île
       tekst: Rundt 50 øl på fat fordelt på to barer i samme gate. Mer bredde enn nisje, men alltid noen IPA-er på listen.
@@ -465,6 +476,7 @@ gutta:
         bestill: "Ligger 15 min nord for Lyon. Passer på torsdag med leiebilen, på vei fra flyplassen til Beaujolais."
         adresse: 645 rue du Musée, 69270 Rochetaillée-sur-Saône
         sok: Musée de l'Automobile Henri Malartre
+        nettside: https://www.musee-malartre.com/
 
   - person: Morten J
     rolle: Lysdesigneren
@@ -483,12 +495,14 @@ gutta:
         apent: Tirsdag–søndag 10:00–18:30
         adresse: 25 rue du Premier Film, 69008 Lyon
         sok: Musée Lumière Lyon
+        nettside: https://www.institut-lumiere.org/
       - navn: Fourvière på innsiden
         type: Guidet tur · Fourvière
         tekst: "Omvisning over hvelvene, i stålkonstruksjonen og opp i observatorietårnet med utsikt over hele byen. Kveldsturene går bare om vinteren, men dagturene går også i september."
         apent: Sjekk datoer på booking.fourviere.org. Ca. 18 €.
         adresse: 8 place de Fourvière, 69005 Lyon
         sok: Basilique Notre-Dame de Fourvière
+        nettside: https://booking.fourviere.org/
         chip: sjekk
 
   - person: Morten G
@@ -513,6 +527,7 @@ gutta:
         apent: Sjekk tider på chrd.lyon.fr
         adresse: 14 avenue Berthelot, 69007 Lyon
         sok: CHRD Lyon
+        nettside: https://www.chrd.lyon.fr/
         chip: sjekk
       - navn: Interpol, hovedkvarteret
         type: Bare utenfra · Cité Internationale
@@ -520,6 +535,7 @@ gutta:
         apent: Kun utenfra
         adresse: 200 quai Charles de Gaulle, 69006 Lyon
         sok: Interpol General Secretariat Lyon
+        nettside: https://www.interpol.int/
 
   - person: Vidar
     rolle: Tømreren
@@ -544,3 +560,4 @@ gutta:
         bestill: "En idé til torsdag: kjør fra flyplassen til Pérouges for lunsj, og så videre til Beaujolais (ca. 1 t 15)."
         adresse: Cité médiévale, 01800 Pérouges
         sok: Cité médiévale de Pérouges
+        nettside: https://www.perouges-bugey-tourisme.com/
