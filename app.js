@@ -132,7 +132,7 @@
     });
   }
 
-  fetch('innhold.yml', { cache: 'no-cache' })
+  fetch('innhold.yml?v=' + Date.now(), { cache: 'no-cache' })
     .then(function (r) { if (!r.ok) throw new Error('Fant ikke innhold.yml'); return r.text(); })
     .then(function (txt) { render(jsyaml.load(txt)); })
     .catch(function (e) {

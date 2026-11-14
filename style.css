@@ -1,3 +1,4 @@
+[hidden]{display:none!important}
 /* Layout: sticky nav → logo hero → fakta-stripe → dagsprogram som tidslinjer → kort for mat, kart, transport, leksikon, praktisk. Mobil: bunnmeny. */
 :root{
   --bg:#fbfaf8; --surface:#ffffff; --sunk:#f1eeea; --ink:#1d1a19; --muted:#6b6360; --line:#e2ddd8;
@@ -209,10 +210,11 @@ footer img{height:40px;filter:var(--logo-filter);opacity:.8}
 .meny-grid h4{margin:0 0 4px;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
 .meny-grid a{padding:8px 0;color:var(--ink);text-decoration:none;font-weight:500;font-size:1.02rem;border-bottom:1px dashed var(--line)}
 .meny-grid a:hover{color:var(--gamay)}
-@media (max-width:560px){.meny-grid{grid-template-columns:1fr 1fr}.vidar-pill{padding:6px 10px;font-size:.8rem}}
+@media (max-width:560px){.meny-grid{grid-template-columns:1fr}.vidar-pill{padding:6px 10px;font-size:.8rem}}
 @media (max-width:360px){.vidar-pill{display:none}}
 @media (prefers-reduced-motion:reduce){.burger i{transition:none}}
 .nav .meny .wrap{display:grid;grid-template-columns:minmax(0,1fr);justify-content:stretch;justify-items:stretch;align-items:start}
 .nav .meny-vidar{color:var(--bg);font-size:1.6rem;white-space:normal}
 .nav .meny-grid a{font-size:1.02rem;white-space:normal}
 .nav .meny-grid a:hover{color:var(--gamay)}
+@media (max-width:760px){.nav .meny .wrap{padding-bottom:calc(90px + env(safe-area-inset-bottom,0px))}}
