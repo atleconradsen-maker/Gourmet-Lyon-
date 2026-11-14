@@ -162,3 +162,14 @@ footer img{height:40px;filter:var(--logo-filter);opacity:.8}
   .bnav svg{width:20px;height:20px;stroke:var(--gamay);fill:none;stroke-width:1.8}
 }
 @media (max-width:1000px) and (min-width:761px){.prac{grid-template-columns:1fr 1fr}}
+
+/* kartknapper */
+.mapbtns{display:flex;flex-wrap:wrap;gap:8px}
+.mapbtn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 16px;border-radius:999px;font-weight:600;font-size:.92rem;text-decoration:none;border:1px solid var(--line);color:var(--ink);background:var(--surface)}
+.mapbtn.primary{background:var(--saone);border-color:var(--saone);color:var(--bg)}
+.mapbtn svg,.tl-map svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;flex:none}
+.tl-map{display:inline-flex;align-items:center;gap:6px;justify-self:start;margin-top:6px;min-height:40px;padding:8px 14px;border-radius:999px;background:var(--saone-soft);color:var(--saone);font-weight:600;font-size:.88rem;text-decoration:none}
+.hjem-btn{justify-self:start;background:var(--saone);color:var(--bg);margin-bottom:20px}
+.bnav a.bnav-hjem{color:var(--saone)}
+.bnav a.bnav-hjem svg{stroke:var(--saone)}
+@media (max-width:760px){.mapbtn{flex:1 1 auto;justify-content:center}}

@@ -8,6 +8,10 @@
 #  - Tekst med kolon (:) i seg bør stå i "anførselstegn".
 #  - Linjer som starter med # er kommentarer og vises ikke.
 #  - chip kan være: book, ipa eller sjekk
+#  - sted: gir en kartknapp på programpunktet. Skriv navnet på et sted
+#    fra "steder" eller "overnatting" (da brukes adressen derfra),
+#    eller en vanlig adresse/søketekst for Google Maps.
+#  - hjem: under "tur" styrer «Ta meg hjem»-knappen nederst på mobil.
 # ─────────────────────────────────────────────────────────────
 
 tur:
@@ -15,6 +19,8 @@ tur:
   # Startdato brukes til nedtellingen (år-måned-dag)
   start: 2027-09-23
   datoer: 23.–26. september 2027
+  # «Ta meg hjem»-knappen gir veibeskrivelse hit (til fots)
+  hjem: 4 Rue de la Loge 69005 Lyon
   undertittel: Gourmetklubben på tur
   ingress: "23.–26. september 2027. Fire dager med bouchon, Beaujolais-cru og skikkelig IPA. Første natt på vingård i Quincié, deretter to netter midt i gamlebyen i Lyon. Alt dere trenger å vite ligger her."
   fakta:
@@ -33,45 +39,45 @@ program:
     hvor: Flyplassen → Beaujolais
     merke: Leiebil
     punkter:
-      - { tid: "10:00", tittel: Landing på Lyon-Saint Exupéry, tekst: Hent leiebilen i terminalen. Én sjåfør holder seg til smaksprøver. }
+      - { tid: "10:00", tittel: Landing på Lyon-Saint Exupéry, sted: "Aéroport Lyon-Saint Exupéry", tekst: Hent leiebilen i terminalen. Én sjåfør holder seg til smaksprøver. }
       - { tid: "11:00", tittel: Kjør mot Beaujeu, tekst: "Ca. 1 time via A46/A6. Innsjekk på vingården er først 16:00, så vi tar lunsj og smaking på veien." }
-      - { tid: "12:30", tittel: Lunsj i Beaujeu, chip: sjekk, tekst: "Beaujolais' gamle hovedstad, 10 min fra vingården. Le Retinton er et forslag. Book eller sjekk åpningstider." }
-      - { tid: "14:30", tittel: "Le Comptoir Beaujolais, Beaujeu", tekst: "Hvelvet vinkjeller fra 1956 med over 40 viner fra 15 domener. Smak cru, spis ost og charcuterie, kjøp med hjem. Åpner igjen 14:30 etter lunsjpausen." }
-      - { tid: "16:00", tittel: Innsjekk hos Yvan, tekst: "175 route de Saint-Nizier, Quincié-en-Beaujolais. Spør om smaking på domenet og grill til kvelden." }
-      - { tid: "19:30", tittel: "Middag: Le Mont Brouilly", chip: book, tekst: "Hotellrestaurant i Quincié, kort vei hjem. Alternativ: grill eller raclette på vingården med husets vin, avtal med verten på forhånd." }
+      - { tid: "12:30", tittel: Lunsj i Beaujeu, sted: "Beaujeu", chip: sjekk, tekst: "Beaujolais' gamle hovedstad, 10 min fra vingården. Le Retinton er et forslag. Book eller sjekk åpningstider." }
+      - { tid: "14:30", tittel: "Le Comptoir Beaujolais, Beaujeu", sted: "Le Comptoir Beaujolais", tekst: "Hvelvet vinkjeller fra 1956 med over 40 viner fra 15 domener. Smak cru, spis ost og charcuterie, kjøp med hjem. Åpner igjen 14:30 etter lunsjpausen." }
+      - { tid: "16:00", tittel: Innsjekk hos Yvan, sted: "Vingården i Quincié", tekst: "175 route de Saint-Nizier, Quincié-en-Beaujolais. Spør om smaking på domenet og grill til kvelden." }
+      - { tid: "19:30", tittel: "Middag: Le Mont Brouilly", sted: "Le Mont Brouilly", chip: book, tekst: "Hotellrestaurant i Quincié, kort vei hjem. Alternativ: grill eller raclette på vingården med husets vin, avtal med verten på forhånd." }
 
   - dag: Fredag 24. september
     hvor: Beaujolais → Lyon
     merke: Bil → Uber
     punkter:
       - { tid: "09:00", tittel: Frokost og utsjekk, tekst: Utsjekk senest 10:00. }
-      - { tid: "10:00", tittel: Kjør til flyplassen og lever bilen, tekst: "Ikke kjør inn i Vieux Lyon: trange gater og nesten ingen parkering." }
-      - { tid: "11:15", tittel: Uber til Vieux Lyon, tekst: "Ca. 35–45 min. Innsjekk er først 15:00, så spør verten om vi kan sette fra oss bagasjen tidligere." }
-      - { tid: "12:30", tittel: "Lang lunsj: Daniel et Denise Saint-Jean", chip: book, tekst: "Ekte bouchon i gamlebyen, ca. 10 min å gå fra leiligheten. Bestill pâté en croûte og quenelle." }
-      - { tid: "15:00", tittel: Innsjekk i Rue de la Loge, tekst: "4 rue de la Loge, Vieux Lyon. Vert er Valérie Stéphane." }
-      - { tid: "15:45", tittel: Musée des Confluences, tekst: "Vitenskap og antropologi i en bygning som er verdt turen alene. Uber ca. 15 min." }
-      - { tid: "17:45", tittel: Bateau Bellona, chip: sjekk, tekst: "Péniche-bar ved museet med terrasse over Rhône. Åpningstidene varierer etter sesong, så sjekk før dere går." }
-      - { tid: "19:30", tittel: Ninkasi Gerland, chip: ipa, tekst: "Lyons eget bryggeri. Stor brewpub med burgere og husets øl. Ca. 10 min med Uber fra Confluence." }
+      - { tid: "10:00", tittel: Kjør til flyplassen og lever bilen, sted: "Aéroport Lyon-Saint Exupéry", tekst: "Ikke kjør inn i Vieux Lyon: trange gater og nesten ingen parkering." }
+      - { tid: "11:15", tittel: Uber til Vieux Lyon, sted: "Leilighet i Rue de la Loge", tekst: "Ca. 35–45 min. Innsjekk er først 15:00, så spør verten om vi kan sette fra oss bagasjen tidligere." }
+      - { tid: "12:30", tittel: "Lang lunsj: Daniel et Denise Saint-Jean", sted: "Daniel et Denise Saint-Jean", chip: book, tekst: "Ekte bouchon i gamlebyen, ca. 10 min å gå fra leiligheten. Bestill pâté en croûte og quenelle." }
+      - { tid: "15:00", tittel: Innsjekk i Rue de la Loge, sted: "Leilighet i Rue de la Loge", tekst: "4 rue de la Loge, Vieux Lyon. Vert er Valérie Stéphane." }
+      - { tid: "15:45", tittel: Musée des Confluences, sted: "Musée des Confluences", tekst: "Vitenskap og antropologi i en bygning som er verdt turen alene. Uber ca. 15 min." }
+      - { tid: "17:45", tittel: Bateau Bellona, sted: "Bateau Bellona", chip: sjekk, tekst: "Péniche-bar ved museet med terrasse over Rhône. Åpningstidene varierer etter sesong, så sjekk før dere går." }
+      - { tid: "19:30", tittel: Ninkasi Gerland, sted: "Ninkasi Gerland", chip: ipa, tekst: "Lyons eget bryggeri. Stor brewpub med burgere og husets øl. Ca. 10 min med Uber fra Confluence." }
 
   - dag: Lørdag 25. september
     hvor: Hele dagen i Lyon
     merke: Til fots + Uber
     punkter:
-      - { tid: "08:30", tittel: "Frokost: Boulangerie Saint-Vincent", tekst: "5 min å gå over gangbrua Saint-Vincent. Åpner 07:30 på lørdager." }
-      - { tid: "10:00", tittel: Les Halles Paul Bocuse, tekst: Matmarkedet. Østers og et glass hvitvin til formiddagen er helt akseptert her. Uber ca. 15 min. }
-      - { tid: "11:30", tittel: Traboules i Vieux Lyon, tekst: Skjulte passasjer gjennom bakgårdene. Start ved 54 rue Saint-Jean og 27 rue du Bœuf. }
-      - { tid: "12:30", tittel: "Lang lunsj: Café Comptoir Abel", chip: book, tekst: Bouchon fra 1928 nær Ainay. Kjent for tablier de sapeur og kardongratin. }
-      - { tid: "15:00", tittel: Fourvière-basilikaen, tekst: Ta kabelbanen fra Vieux Lyon. Utsikten over hele byen fra terrassen bak kirken. }
-      - { tid: "17:30", tittel: "Carousel Beer, Croix-Rousse", chip: ipa, tekst: Taproom med ca. 12 roterende fat og stort utvalg på boks. Terrasse på torget. Metro C eller Uber. }
-      - { tid: "20:00", tittel: "Middag: Têtedoie", chip: book, tekst: Kveldens store middag, på Fourvière-høyden med vinduer over byen. Uber fra Croix-Rousse ca. 15 min. }
+      - { tid: "08:30", tittel: "Frokost: Boulangerie Saint-Vincent", sted: "Boulangerie Saint-Vincent", tekst: "5 min å gå over gangbrua Saint-Vincent. Åpner 07:30 på lørdager." }
+      - { tid: "10:00", tittel: Les Halles Paul Bocuse, sted: "Les Halles Paul Bocuse", tekst: Matmarkedet. Østers og et glass hvitvin til formiddagen er helt akseptert her. Uber ca. 15 min. }
+      - { tid: "11:30", tittel: Traboules i Vieux Lyon, sted: "54 Rue Saint-Jean Lyon", tekst: Skjulte passasjer gjennom bakgårdene. Start ved 54 rue Saint-Jean og 27 rue du Bœuf. }
+      - { tid: "12:30", tittel: "Lang lunsj: Café Comptoir Abel", sted: "Café Comptoir Abel", chip: book, tekst: Bouchon fra 1928 nær Ainay. Kjent for tablier de sapeur og kardongratin. }
+      - { tid: "15:00", tittel: Fourvière-basilikaen, sted: "Fourvière-basilikaen", tekst: Ta kabelbanen fra Vieux Lyon. Utsikten over hele byen fra terrassen bak kirken. }
+      - { tid: "17:30", tittel: "Carousel Beer, Croix-Rousse", sted: "Carousel Beer", chip: ipa, tekst: Taproom med ca. 12 roterende fat og stort utvalg på boks. Terrasse på torget. Metro C eller Uber. }
+      - { tid: "20:00", tittel: "Middag: Têtedoie", sted: "Têtedoie", chip: book, tekst: Kveldens store middag, på Fourvière-høyden med vinduer over byen. Uber fra Croix-Rousse ca. 15 min. }
 
   - dag: Søndag 26. september
     hvor: Hjemreise
     merke: Uber
     punkter:
-      - { tid: "09:00", tittel: Croissant og kaffe, tekst: Boulangerie Saint-Vincent er åpen til 15:00 på søndager. }
+      - { tid: "09:00", tittel: Croissant og kaffe, sted: "Boulangerie Saint-Vincent", tekst: Boulangerie Saint-Vincent er åpen til 15:00 på søndager. }
       - { tid: "10:30", tittel: Sjekk ut og pakk vinen godt, tekst: "Vin i innsjekket bagasje: pakk flaskene i klær eller vinbeskyttere." }
-      - { tid: "11:00", tittel: Uber til flyplassen, tekst: "Ca. 35–45 min. Alternativ: Rhônexpress fra Part-Dieu, ca. 30 min." }
+      - { tid: "11:00", tittel: Uber til flyplassen, sted: "Aéroport Lyon-Saint Exupéry", tekst: "Ca. 35–45 min. Alternativ: Rhônexpress fra Part-Dieu, ca. 30 min." }
       - { tid: "14:00", tittel: Fly hjem, tekst: Vær på flyplassen senest 12:00. }
 
 # Spisesteder og barer. "kart" plasserer en nål på Lyon-kartet:

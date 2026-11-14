@@ -7,12 +7,25 @@
   };
   var $ = function (id) { return document.getElementById(id); };
   var maps = function (q) { return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q); };
+  var dir = function (q) { return 'https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(q); };
+  var pinIkon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>';
+  var navIkon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8z"/></svg>';
+  var knapper = function (q) {
+    return '<div class="mapbtns"><a class="mapbtn primary" href="' + dir(q) + '" target="_blank" rel="noopener">' + navIkon + 'Veibeskrivelse</a>' +
+      '<a class="mapbtn" href="' + maps(q) + '" target="_blank" rel="noopener">' + pinIkon + 'Vis i kart</a></div>';
+  };
   var chipNavn = { book: 'Book', ipa: 'IPA', sjekk: 'Sjekk åpent' };
   var chipKlasse = { book: 'book', ipa: 'beer', sjekk: 'check' };
   var chip = function (c) { return c ? ' <span class="chip ' + (chipKlasse[c] || 'check') + '">' + esc(chipNavn[c] || c) + '</span>' : ''; };
   var get = function (o, path) { return path.split('.').reduce(function (a, k) { return a ? a[k] : undefined; }, o); };
 
   function render(d) {
+    var oppslag = {};
+    [].concat(d.steder || [], d.overnatting || []).forEach(function (s) { oppslag[s.navn] = s.sok || s.adresse || s.navn; });
+    var finn = function (sted) { return oppslag[sted] || sted; };
+    if (d.tur && d.tur.hjem) {
+      document.querySelectorAll('[data-hjem]').forEach(function (a) { a.href = dir(d.tur.hjem); });
+    }
     document.querySelectorAll('[data-f]').forEach(function (el) { el.textContent = get(d, el.dataset.f) || ''; });
     if (d.tur && d.tur.start) {
       var start = new Date(d.tur.start), now = new Date();
@@ -34,7 +47,7 @@
       return '<article class="day"><div class="day-head"><h3>' + esc(dag.dag) + '</h3><span class="where">' + esc(dag.hvor) + '</span>' +
         (dag.merke ? '<span class="tag">' + esc(dag.merke) + '</span>' : '') + '</div><ol class="tl">' +
         (dag.punkter || []).map(function (p) {
-          return '<li><time>' + esc(p.tid) + '</time><div class="what"><strong>' + esc(p.tittel) + chip(p.chip) + '</strong>' + (p.tekst ? '<p>' + esc(p.tekst) + '</p>' : '') + '</div></li>';
+          return '<li><time>' + esc(p.tid) + '</time><div class="what"><strong>' + esc(p.tittel) + chip(p.chip) + '</strong>' + (p.tekst ? '<p>' + esc(p.tekst) + '</p>' : '') + (p.sted ? '<a class="tl-map" href="' + dir(finn(p.sted)) + '" target="_blank" rel="noopener">' + navIkon + 'Veibeskrivelse</a>' : '') + '</div></li>';
         }).join('') + '</ol></article>';
     }).join('');
 
@@ -44,14 +57,14 @@
         (s.tekst ? '<p>' + esc(s.tekst) + '</p>' : '') +
         (s.bestill ? '<div class="order"><b>Tips:</b> ' + esc(s.bestill) + '</div>' : '') +
         (s.adresse ? '<span class="addr">' + esc(s.adresse) + '</span>' : '') +
-        '<div class="links"><a href="' + maps(s.sok || s.navn) + '" target="_blank" rel="noopener">Åpne i kart ↗</a>' +
-        (s.nettside ? '<a href="' + esc(s.nettside) + '" target="_blank" rel="noopener">Nettside ↗</a>' : '') + '</div></article>';
+        knapper(s.sok || s.navn) +
+        (s.nettside ? '<div class="links"><a href="' + esc(s.nettside) + '" target="_blank" rel="noopener">Nettside ↗</a></div>' : '') + '</article>';
     }).join('');
 
     $('overnatting').innerHTML = (d.overnatting || []).map(function (o) {
       return '<article class="card"><span class="kind">' + esc(o['når']) + '</span><h3>' + esc(o.navn) + '</h3><p>' + esc(o.tekst) + '</p>' +
         '<ul>' + (o.punkter || []).map(function (p) { return '<li>' + esc(p) + '</li>'; }).join('') + '</ul>' +
-        '<div class="links"><a href="' + maps(o.sok || o.navn) + '" target="_blank" rel="noopener">Åpne i kart ↗</a></div></article>';
+        knapper(o.sok || o.navn) + '</article>';
     }).join('');
 
     var farge = { mat: 'var(--gamay)', ol: 'var(--gold)', hjem: 'var(--saone)' };
@@ -59,12 +72,12 @@
     var paKart = [].concat(d.overnatting || [], d.steder || []).filter(function (s) { return s.kart; });
     $('naler').innerHTML = paKart.map(function (s) {
       var k = s.kart;
-      return '<a href="' + maps(s.sok || s.navn) + '" target="_blank"><circle cx="' + (+k.x) + '" cy="' + (+k.y) + '" r="12" fill="' + (farge[k.type] || farge.mat) + '"/>' +
+      return '<a href="' + dir(s.sok || s.navn) + '" target="_blank"><circle cx="' + (+k.x) + '" cy="' + (+k.y) + '" r="12" fill="' + (farge[k.type] || farge.mat) + '"/>' +
         '<text x="' + (+k.x) + '" y="' + (+k.y + 4) + '" fill="var(--bg)">' + esc(k.nr) + '</text></a>';
     }).join('');
     $('tegnforklaring').innerHTML = paKart.map(function (s) {
       var k = s.kart;
-      return '<li><span class="pin' + (pinKl[k.type] || '') + '">' + esc(k.nr) + '</span><div><a href="' + maps(s.sok || s.navn) + '" target="_blank" rel="noopener">' + esc(s.navn) + '</a><small>' + esc(s['når'] || '') + '</small></div></li>';
+      return '<li><span class="pin' + (pinKl[k.type] || '') + '">' + esc(k.nr) + '</span><div><a href="' + dir(s.sok || s.navn) + '" target="_blank" rel="noopener">' + esc(s.navn) + '</a><small>' + esc(s['når'] || '') + '</small></div></li>';
     }).join('');
 
     $('strekninger').innerHTML = ((d.transport && d.transport.strekninger) || []).map(function (l) {
