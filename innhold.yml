@@ -899,3 +899,78 @@ takbarer:
       adresse: 50 quai Rambaud, 69002 Lyon
       sok: Le Sucre Lyon
       nettside: https://le-sucre.eu/
+
+# Live musikk. Grupper med steder, samme oppsett som resten.
+livemusikk:
+  ingress: "Fredag og lørdag er det musikk overalt i Lyon. Rue Saint-Georges og rue Saint-Jean i gamlebyen er fulle av irske puber med trubadurer, og bare noen minutter unna ligger jazzkjellere fra 1700-tallet. Programmet endrer seg fra uke til uke, så sjekk hvem som spiller før dere går."
+  grupper:
+    - tittel: Irske puber med trubadur
+      steder:
+        - navn: Fleming's
+          type: Irsk pub · Vieux Lyon
+          tekst: "Ligger vegg i vegg med leiligheten i rue de la Loge. Konserter med jevne mellomrom, og kortere vei hjem enn dette finnes ikke."
+          apent: "Mandag–fredag 17:00–01:00, lørdag og søndag 14:00–01:00"
+          adresse: 2 rue de la Loge, 69005 Lyon
+          sok: Fleming's Irish Pub 2 rue de la Loge Lyon
+        - navn: Johnny Walsh's
+          type: Irsk pub · Saint-Georges
+          tekst: "Gamlebyens mest kjente musikkpub, med live musikk nesten hver kveld. Trubadurer, irsk folk og allsang. 10 minutter å gå fra leiligheten langs Saône."
+          apent: "Tirsdag–lørdag 21:00–03:00"
+          adresse: 56 rue Saint-Georges, 69005 Lyon
+          sok: Johnny Walsh's Lyon
+        - navn: Johnny's Kitchen
+          type: Irsk pub og mat · Saint-Georges
+          tekst: "Søsterstedet noen dører unna, med mat og live musikk. Fint for å starte kvelden før dere går videre til Johnny Walsh's."
+          apent: "Søndag–torsdag 12:00–01:00, fredag og lørdag 12:00–02:00"
+          adresse: 48 rue Saint-Georges, 69005 Lyon
+          sok: Johnny's Kitchen Lyon
+        - navn: Kelly's
+          type: Irsk pub · Quai Romain Rolland
+          tekst: "Pub ved Saône-kaia med live musikk torsdag og fredag. Holder åpent til 03:00 de kveldene."
+          apent: "Torsdag og fredag 18:00–03:00, lørdag 17:00–01:00"
+          adresse: 12 quai Romain Rolland, 69005 Lyon
+          sok: Kelly's Irish Pub Lyon
+        - navn: Flan's
+          type: Irsk pub · Terreaux
+          tekst: "Tidligere Flanigan's. Konserter i helgene og åpent til 04:00 fredag og lørdag, så dette er stedet når de andre stenger."
+          apent: "Alle dager fra 17:00, fredag og lørdag til 04:00"
+          adresse: 12 rue du Griffon, 69001 Lyon
+          sok: Flan's pub 12 rue du Griffon Lyon
+    - tittel: Jazzklubber
+      steder:
+        - navn: Hot Club de Lyon
+          type: Jazzklubb · Presqu'île
+          tekst: "Startet i 1948 og regnes som Europas eldste jazzklubb som fortsatt er i drift. Konserter i en hvelvet kjeller, fra bebop og manouche til salsa. Rundt 160 konserter i året."
+          apent: "Konserter og jam sessions tirsdag–lørdag om kvelden"
+          bestill: "Sjekk programmet og kjøp billett på nettsiden."
+          adresse: 26 rue Lanterne, 69001 Lyon
+          sok: Hot Club de Lyon jazz
+          nettside: http://www.hotclubjazzlyon.com/
+        - navn: La Clef de Voûte
+          type: Jazzkjeller · Croix-Rousse
+          tekst: "Hvelvet kjeller fra 1700-tallet med over 150 konserter i året. Gratis inngang, men dere må reservere på nett."
+          apent: "Onsdag–mandag, dørene åpner 19:30 og musikken starter 20:30"
+          bestill: "Reserver bord på nettsiden, den fylles fort."
+          adresse: 1 place Chardonnet, 69001 Lyon
+          sok: La Clef de Voute Lyon jazz
+          nettside: https://www.laclefdevoute.fr/
+          chip: book
+        - navn: Le Bec de Jazz
+          type: Nattjazz · Terreaux
+          tekst: "Et lite, mørkt nattsted der musikerne fra de andre klubbene ender opp etter jobb. Åpner først 22:30 og holder på til morgenen."
+          apent: "Torsdag–lørdag 22:30–05:00"
+          adresse: 19 rue Burdeau, 69001 Lyon
+          sok: Le Bec de Jazz Lyon
+        - navn: Le Périscope
+          type: Jazz og improvisasjon · Perrache
+          tekst: "Scene for moderne jazz og eksperimentell musikk, med over 150 arrangementer i året. For de som vil høre noe nytt."
+          apent: "Varierer etter program. Sjekk før dere går."
+          adresse: 13 rue Delandine, 69002 Lyon
+          sok: Le Periscope Lyon
+          chip: sjekk
+        - navn: Le Melhor
+          type: Takbar med jazz · Bellecour
+          tekst: "Takbaren på Sofitel har live jazz til cocktailene. Det fineste valget hvis dere vil ha utsikt og musikk på én gang."
+          apent: "Mandag–lørdag 18:00–01:00"
+          adresse: 20 quai du Docteur Gailleton, 69002 Lyon
+          sok: Le Melhor Sofitel Lyon

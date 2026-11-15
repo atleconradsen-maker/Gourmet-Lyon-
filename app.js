@@ -122,6 +122,12 @@
       $('takbarer-ingress').textContent = d.takbarer.ingress || '';
       $('takbarer-liste').innerHTML = (d.takbarer.steder || []).map(kort).join('');
     } else { $('takbarer').hidden = true; }
+    if (d.livemusikk) {
+      $('livemusikk-ingress').textContent = d.livemusikk.ingress || '';
+      $('livemusikk-liste').innerHTML = (d.livemusikk.grupper || []).map(function (g) {
+        return '<h3 class="ma-tittel">' + esc(g.tittel) + '</h3><div class="grid">' + (g.steder || []).map(kort).join('') + '</div>';
+      }).join('');
+    } else { $('livemusikk').hidden = true; }
     $('moro-liste').innerHTML = (d.moro || []).map(function (m) {
       return '<article class="card idea"><h3>' + esc(m.tittel) + '</h3><p>' + esc(m.tekst) + '</p>' +
         '<div class="mapbtns">' + (m.sted ? '<a class="tl-map" href="' + dir(finn(m.sted)) + '" target="_blank" rel="noopener">' + navIkon + 'Veibeskrivelse</a>' : '') +
