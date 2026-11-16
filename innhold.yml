@@ -57,7 +57,8 @@ program:
       - { tid: "09:30", tittel: Gutta slippes av i Vieux Lyon, sted: "Quai Romain Rolland Lyon", tekst: "Stopp kort på Quai Romain Rolland ved Place du Change, 2 min å gå til rue de la Loge. Ikke kjør inn i selve gamlebyen: gågater og nesten ingen parkering." }
       - { tid: "09:45", tittel: Sett fra oss bagasjen, sted: "Leilighet i Rue de la Loge", tekst: "Innsjekk er først 15:00. Spør Valérie om vi kan sette fra oss bagasjen tidlig. Hvis ikke: apper som Bounce eller Nannybag har bagasjeoppbevaring i butikker i gamlebyen, ca. 5–8 € per bag. Croissant og kaffe på veien." }
       - { tid: "10:00", tittel: "Venteøl: Le Café de la Cathédrale", sted: "Le Café de la Cathédrale 6 rue Saint-Etienne Lyon", chip: sjekk, tekst: "Bar med terrasse ved katedralen, 4 min fra leiligheten. IPA på fat, tapas og sport på TV. Her venter vi på sjåføren. Åpner 10:00 eller 11:00, kildene spriker, så sjekk dagen før." }
-      - { tid: "10:30", tittel: Sjåføren leverer bilen, sted: "Aéroport Lyon-Saint Exupéry", tekst: "Ca. 35 min fra Vieux Lyon. Fyll tanken på en stasjon før flyplassen, for bilen skal leveres full. Lever 10:30." }
+      - { tid: "10:10", tittel: "Sjåføren fyller tanken", sted: "TotalEnergies Relais Lyon Saint-Exupéry 600 Rue de France Colombier-Saugnieu", tekst: "TotalEnergies Relais Lyon St-Exupéry, 600 rue de France, rett ved flyplassen. Ca. 35 min fra Vieux Lyon. Butikken er åpen hverdager 06:00–21:00, og kortautomaten er åpen døgnet rundt. Sjekk om bilen går på bensin eller diesel, det står på lokket til tanken." }
+      - { tid: "10:30", tittel: Sjåføren leverer bilen, sted: "Aéroport Lyon-Saint Exupéry", tekst: "Lever bilen med full tank hos FLIZZR. Ta vare på kvitteringen fra bensinstasjonen." }
       - { tid: "10:45", tittel: Sjåføren tar Rhônexpress inn, sted: "Vieux Lyon", tekst: "Rhônexpress fra flyplassen til Part-Dieu tar ca. 30 min og koster rundt 17 €. Derfra metro B til Saxe-Gambetta og D til Vieux Lyon, ca. 15 min. Møter gutta på Café de la Cathédrale rundt 11:45." }
       - { tid: "12:30", tittel: "Lang lunsj: Daniel et Denise Saint-Jean", sted: "Daniel et Denise Saint-Jean", chip: book, tekst: "Ekte bouchon i gamlebyen, ca. 10 min å gå fra leiligheten. Bestill pâté en croûte og quenelle." }
       - { tid: "15:00", tittel: Innsjekk i Rue de la Loge, sted: "Leilighet i Rue de la Loge", tekst: "4 rue de la Loge, Vieux Lyon. Vert er Valérie Stéphane." }
@@ -235,6 +236,7 @@ transport:
     - { fra: Flyplass → Quincié, hvordan: Leiebil via A46 og A6, tid: ca. 1 t }
     - { fra: Quincié → Beaujeu, hvordan: Leiebil gjennom vinmarkene, tid: ca. 10 min }
     - { fra: Quincié → Vieux Lyon → flyplass, hvordan: "Fredag: alle kjører inn til gamlebyen, så leverer sjåføren bilen alene på flyplassen 10:30", tid: "ca. 1 t + 35 min" }
+    - { fra: Bensin før levering, hvordan: "TotalEnergies Relais Lyon St-Exupéry, 600 rue de France, Colombier-Saugnieu. Kortautomat døgnet rundt, butikk hverdager 06–21.", tid: rett ved flyplassen }
     - { fra: Flyplass → Lyon, hvordan: "Rhônexpress til Part-Dieu (ca. 17 €), så metro B og D til Vieux Lyon. Eller Uber.", tid: ca. 45 min }
     - { fra: Vieux Lyon → Fourvière, hvordan: Kabelbanen (funiculaire) fra stasjonen Vieux Lyon, tid: ca. 5 min }
     - { fra: I byen, hvordan: "Metro, trikk og buss (TCL). Kjøp billett i TCL-appen eller betal med bankkort", tid: 10–20 min }
