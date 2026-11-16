@@ -225,6 +225,7 @@ transport:
   strekninger:
     - { fra: Oslo → Lyon, hvordan: "Norwegian DY 1454, tor 23.9, 07:00 → 09:35", tid: 2 t 35 min }
     - { fra: Lyon → Oslo, hvordan: "Norwegian DY 1455, søn 26.9, 14:40 → 17:10", tid: 2 t 30 min }
+    - { fra: Flypris tur-retur, hvordan: "1 800 kr per person med håndbagasje, 2 800 kr med én innsjekket koffert (25 kg)", tid: per person }
     - { fra: Flyplass → Quincié, hvordan: Leiebil via A46 og A6, tid: ca. 1 t }
     - { fra: Quincié → Beaujeu, hvordan: Leiebil gjennom vinmarkene, tid: ca. 10 min }
     - { fra: Quincié → flyplass, hvordan: Lever bilen på flyplassen fredag formiddag, tid: ca. 1 t }
@@ -235,6 +236,7 @@ transport:
 praktisk:
   - { etikett: Nødnummer, stor: "112", tekst: "Politi, brann og ambulanse. Legevakt: 15. Apotek har grønt kors." }
   - { etikett: Ambassade, tittel: Norges ambassade i Paris, tekst: "28 rue Bayard, 75008 Paris · +33 1 53 67 04 00" }
+  - { etikett: Flypris, tittel: "1 800–2 800 kr per person", tekst: "Tur-retur med Norwegian. 1 800 kr med bare håndbagasje, 2 800 kr med én innsjekket koffert på 25 kg. Skal du ta med vin hjem, trenger du innsjekket bagasje." }
   - { etikett: Penger, tittel: Euro, tekst: Kort fungerer nesten overalt. Ha noen kontanter til små bakerier og markedsboder. }
   - { etikett: Tips, tittel: Service er inkludert, tekst: "«Service compris» står på regningen. Rund opp eller legg 5–10 % ved god service." }
   - { etikett: Strøm og tid, tittel: Som hjemme, tekst: Norske ladere passer (type E). Samme tidssone som Norge. }
