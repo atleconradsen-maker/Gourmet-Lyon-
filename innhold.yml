@@ -50,11 +50,15 @@ program:
 
   - dag: Fredag 24. september
     hvor: Beaujolais → Lyon
-    merke: Bil → Uber
+    merke: Bil → Rhônexpress
     punkter:
-      - { tid: "08:15", tittel: Frokost og utsjekk, tekst: "Tidlig frokost. Vi må kjøre fra vingården senest 09:15 for å rekke å levere bilen." }
-      - { tid: "09:15", tittel: Kjør til flyplassen og lever bilen, sted: "Aéroport Lyon-Saint Exupéry", tekst: "Ca. 1 time. Bilen skal leveres 10:30, med full tank. Fyll på en stasjon før flyplassen. Ikke kjør inn i Vieux Lyon: trange gater og nesten ingen parkering." }
-      - { tid: "10:45", tittel: Uber til Vieux Lyon, sted: "Leilighet i Rue de la Loge", tekst: "Ca. 35–45 min. Innsjekk er først 15:00, så spør verten om vi kan sette fra oss bagasjen tidligere." }
+      - { tid: "07:45", tittel: Frokost og utsjekk, tekst: "Tidlig frokost og pakk bilen. Vi må kjøre fra vingården 08:30." }
+      - { tid: "08:30", tittel: Kjør inn til Lyon, tekst: "Ca. 1 time via A6. Sjåføren kjører gutta og bagasjen helt inn til gamlebyen." }
+      - { tid: "09:30", tittel: Gutta slippes av i Vieux Lyon, sted: "Quai Romain Rolland Lyon", tekst: "Stopp kort på Quai Romain Rolland ved Place du Change, 2 min å gå til rue de la Loge. Ikke kjør inn i selve gamlebyen: gågater og nesten ingen parkering." }
+      - { tid: "09:45", tittel: Sett fra oss bagasjen, sted: "Leilighet i Rue de la Loge", tekst: "Innsjekk er først 15:00. Spør Valérie om vi kan sette fra oss bagasjen tidlig. Hvis ikke: apper som Bounce eller Nannybag har bagasjeoppbevaring i butikker i gamlebyen, ca. 5–8 € per bag. Croissant og kaffe på veien." }
+      - { tid: "10:00", tittel: "Venteøl: Le Café de la Cathédrale", sted: "Le Café de la Cathédrale 6 rue Saint-Etienne Lyon", chip: sjekk, tekst: "Bar med terrasse ved katedralen, 4 min fra leiligheten. IPA på fat, tapas og sport på TV. Her venter vi på sjåføren. Åpner 10:00 eller 11:00, kildene spriker, så sjekk dagen før." }
+      - { tid: "10:30", tittel: Sjåføren leverer bilen, sted: "Aéroport Lyon-Saint Exupéry", tekst: "Ca. 35 min fra Vieux Lyon. Fyll tanken på en stasjon før flyplassen, for bilen skal leveres full. Lever 10:30." }
+      - { tid: "10:45", tittel: Sjåføren tar Rhônexpress inn, sted: "Vieux Lyon", tekst: "Rhônexpress fra flyplassen til Part-Dieu tar ca. 30 min og koster rundt 17 €. Derfra metro B til Saxe-Gambetta og D til Vieux Lyon, ca. 15 min. Møter gutta på Café de la Cathédrale rundt 11:45." }
       - { tid: "12:30", tittel: "Lang lunsj: Daniel et Denise Saint-Jean", sted: "Daniel et Denise Saint-Jean", chip: book, tekst: "Ekte bouchon i gamlebyen, ca. 10 min å gå fra leiligheten. Bestill pâté en croûte og quenelle." }
       - { tid: "15:00", tittel: Innsjekk i Rue de la Loge, sted: "Leilighet i Rue de la Loge", tekst: "4 rue de la Loge, Vieux Lyon. Vert er Valérie Stéphane." }
       - { tid: "15:45", tittel: Musée des Confluences, sted: "Musée des Confluences", tekst: "Vitenskap og antropologi i en bygning som er verdt turen alene. Uber ca. 15 min." }
@@ -230,8 +234,8 @@ transport:
     - { fra: Leiebil, hvordan: "FLIZZR på flyplassen, VW Golf Estate eller lignende. Manuell girkasse, 5 seter, plass til 4 kofferter. Hentes tor 10:30 og leveres fre 10:30. Gratis shuttlebuss fra terminalen, innsjekking på nett. Full tank ut og full tank inn.", tid: "Ca. 1 434 kr, ca. 287 kr per person. Sjekk prisen for de nye tidene." }
     - { fra: Flyplass → Quincié, hvordan: Leiebil via A46 og A6, tid: ca. 1 t }
     - { fra: Quincié → Beaujeu, hvordan: Leiebil gjennom vinmarkene, tid: ca. 10 min }
-    - { fra: Quincié → flyplass, hvordan: "Lever bilen på flyplassen fredag 10:30. Kjør senest 09:15", tid: ca. 1 t }
-    - { fra: Flyplass → Lyon, hvordan: "UberXL til Rue de la Loge, eller Rhônexpress til Part-Dieu", tid: 35–45 min }
+    - { fra: Quincié → Vieux Lyon → flyplass, hvordan: "Fredag: alle kjører inn til gamlebyen, så leverer sjåføren bilen alene på flyplassen 10:30", tid: "ca. 1 t + 35 min" }
+    - { fra: Flyplass → Lyon, hvordan: "Rhônexpress til Part-Dieu (ca. 17 €), så metro B og D til Vieux Lyon. Eller Uber.", tid: ca. 45 min }
     - { fra: Vieux Lyon → Fourvière, hvordan: Kabelbanen (funiculaire) fra stasjonen Vieux Lyon, tid: ca. 5 min }
     - { fra: I byen, hvordan: "Metro, trikk og buss (TCL). Kjøp billett i TCL-appen eller betal med bankkort", tid: 10–20 min }
 
@@ -313,6 +317,14 @@ barer:
     apent: "Alle dager fra 18:00, til 03:00 fredag og lørdag"
     adresse: 20 rue Hippolyte Flandrin, 69001 Lyon
     sok: L'Antiquaire Lyon
+
+  - navn: Le Café de la Cathédrale
+    type: Bar med terrasse · Vieux Lyon
+    tekst: "Kafébar i 50-tallsstil ved katedralen Saint-Jean, med IPA på fat, tapas og sport på TV. En av få barer i gamlebyen som er åpen på formiddagen. 4 min fra leiligheten."
+    apent: "Alle dager fra 10:00 eller 11:00 til 00:00. Sjekk før dere går."
+    adresse: 6 rue Saint-Étienne, 69005 Lyon
+    sok: Le Café de la Cathédrale 6 rue Saint-Etienne Lyon
+    chip: sjekk
 
   - navn: Le Sucre
     type: Klubb på taket · Confluence
