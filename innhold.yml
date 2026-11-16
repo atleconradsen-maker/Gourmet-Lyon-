@@ -40,9 +40,10 @@ program:
     merke: Leiebil
     punkter:
       - { tid: "07:00", tittel: "Avgang Gardermoen, DY 1454", tekst: "Norwegian fra Oslo lufthavn. Vær på Gardermoen senest 05:30, og kjøp gjerne en kaffe til flyet." }
-      - { tid: "09:35", tittel: Landing på Lyon-Saint Exupéry, sted: "Aéroport Lyon-Saint Exupéry", tekst: "Ta Europcars gratis shuttlebuss fra terminalen og hent leiebilen 10:30. Én sjåfør holder seg til smaksprøver." }
-      - { tid: "10:30", tittel: Kjør mot Beaujeu, tekst: "Ca. 1 time via A46/A6. Innsjekk på vingården er først 16:00, så vi tar lunsj og smaking på veien." }
-      - { tid: "12:30", tittel: Lunsj i Beaujeu, sted: "Beaujeu", chip: sjekk, tekst: "Beaujolais' gamle hovedstad, 10 min fra vingården. Le Retinton er et forslag. Book eller sjekk åpningstider." }
+      - { tid: "09:35", tittel: Landing på Lyon-Saint Exupéry, sted: "Aéroport Lyon-Saint Exupéry", tekst: "Bagasje, kaffe og croissant i terminalen. Så tar vi FLIZZRs gratis shuttlebuss til utleiestedet. Sjekk inn på nett på forhånd, så går det raskere." }
+      - { tid: "11:30", tittel: Hent leiebilen, tekst: "VW Golf Estate eller lignende fra FLIZZR. Bilen er manuell, så sjåføren må kunne kjøre med clutch. Én sjåfør holder seg til smaksprøver." }
+      - { tid: "11:45", tittel: Kjør mot Beaujeu, tekst: "Ca. 1 time via A46/A6. Innsjekk på vingården er først 16:00, så vi tar lunsj og smaking på veien." }
+      - { tid: "13:00", tittel: Lunsj i Beaujeu, sted: "Beaujeu", chip: sjekk, tekst: "Beaujolais' gamle hovedstad, 10 min fra vingården. Le Retinton er et forslag. Book bord til 13:00, for kjøkkenet stenger ofte rundt 14." }
       - { tid: "14:30", tittel: "Le Comptoir Beaujolais, Beaujeu", sted: "Le Comptoir Beaujolais", tekst: "Hvelvet vinkjeller fra 1956 med over 40 viner fra 15 domener. Smak cru, spis ost og charcuterie, kjøp med hjem. Åpner igjen 14:30 etter lunsjpausen." }
       - { tid: "16:00", tittel: Innsjekk hos Yvan, sted: "Vingården i Quincié", tekst: "175 route de Saint-Nizier, Quincié-en-Beaujolais. Spør om smaking på domenet og grill til kvelden." }
       - { tid: "19:30", tittel: "Middag: Le Mont Brouilly", sted: "Le Mont Brouilly", chip: book, tekst: "Hotellrestaurant i Quincié, kort vei hjem. Alternativ: grill eller raclette på vingården med husets vin, avtal med verten på forhånd." }
@@ -52,9 +53,9 @@ program:
     merke: Bil → Uber
     punkter:
       - { tid: "09:00", tittel: Frokost og utsjekk, tekst: Utsjekk senest 10:00. }
-      - { tid: "10:00", tittel: Kjør til flyplassen og lever bilen, sted: "Aéroport Lyon-Saint Exupéry", tekst: "Ikke kjør inn i Vieux Lyon: trange gater og nesten ingen parkering." }
-      - { tid: "11:15", tittel: Uber til Vieux Lyon, sted: "Leilighet i Rue de la Loge", tekst: "Ca. 35–45 min. Innsjekk er først 15:00, så spør verten om vi kan sette fra oss bagasjen tidligere." }
-      - { tid: "12:30", tittel: "Lang lunsj: Daniel et Denise Saint-Jean", sted: "Daniel et Denise Saint-Jean", chip: book, tekst: "Ekte bouchon i gamlebyen, ca. 10 min å gå fra leiligheten. Bestill pâté en croûte og quenelle." }
+      - { tid: "10:00", tittel: Kjør til flyplassen og lever bilen, sted: "Aéroport Lyon-Saint Exupéry", tekst: "Bilen skal leveres senest 11:30, med full tank. Fyll på en stasjon før flyplassen. Ikke kjør inn i Vieux Lyon: trange gater og nesten ingen parkering." }
+      - { tid: "11:45", tittel: Uber til Vieux Lyon, sted: "Leilighet i Rue de la Loge", tekst: "Ca. 35–45 min. Innsjekk er først 15:00, så spør verten om vi kan sette fra oss bagasjen tidligere." }
+      - { tid: "13:00", tittel: "Lang lunsj: Daniel et Denise Saint-Jean", sted: "Daniel et Denise Saint-Jean", chip: book, tekst: "Ekte bouchon i gamlebyen, ca. 10 min å gå fra leiligheten. Bestill pâté en croûte og quenelle." }
       - { tid: "15:00", tittel: Innsjekk i Rue de la Loge, sted: "Leilighet i Rue de la Loge", tekst: "4 rue de la Loge, Vieux Lyon. Vert er Valérie Stéphane." }
       - { tid: "15:45", tittel: Musée des Confluences, sted: "Musée des Confluences", tekst: "Vitenskap og antropologi i en bygning som er verdt turen alene. Uber ca. 15 min." }
       - { tid: "17:45", tittel: Bateau Bellona, sted: "Bateau Bellona", chip: sjekk, tekst: "Péniche-bar ved museet med terrasse over Rhône. Åpningstidene varierer etter sesong, så sjekk før dere går." }
@@ -226,10 +227,10 @@ transport:
     - { fra: Oslo → Lyon, hvordan: "Norwegian DY 1454, tor 23.9, 07:00 → 09:35", tid: 2 t 35 min }
     - { fra: Lyon → Oslo, hvordan: "Norwegian DY 1455, søn 26.9, 14:40 → 17:10", tid: 2 t 30 min }
     - { fra: Flypris tur-retur, hvordan: "1 800 kr per person med håndbagasje, 2 800 kr med én innsjekket koffert (25 kg)", tid: per person }
-    - { fra: Leiebil, hvordan: "Europcar på flyplassen, Toyota Corolla Estate eller lignende. Automat, 5 seter, plass til 4 kofferter. Gratis shuttlebuss fra terminalen. Full tank ut og full tank inn.", tid: "2 084 kr, ca. 417 kr per person" }
+    - { fra: Leiebil, hvordan: "FLIZZR på flyplassen, VW Golf Estate eller lignende. Manuell girkasse, 5 seter, plass til 4 kofferter. Hentes tor 11:30 og leveres fre 11:30. Gratis shuttlebuss fra terminalen, innsjekking på nett. Full tank ut og full tank inn.", tid: "1 434 kr, ca. 287 kr per person" }
     - { fra: Flyplass → Quincié, hvordan: Leiebil via A46 og A6, tid: ca. 1 t }
     - { fra: Quincié → Beaujeu, hvordan: Leiebil gjennom vinmarkene, tid: ca. 10 min }
-    - { fra: Quincié → flyplass, hvordan: Lever bilen på flyplassen fredag formiddag, tid: ca. 1 t }
+    - { fra: Quincié → flyplass, hvordan: "Lever bilen på flyplassen fredag, senest 11:30", tid: ca. 1 t }
     - { fra: Flyplass → Lyon, hvordan: "UberXL til Rue de la Loge, eller Rhônexpress til Part-Dieu", tid: 35–45 min }
     - { fra: Vieux Lyon → Fourvière, hvordan: Kabelbanen (funiculaire) fra stasjonen Vieux Lyon, tid: ca. 5 min }
     - { fra: I byen, hvordan: "Metro, trikk og buss (TCL). Kjøp billett i TCL-appen eller betal med bankkort", tid: 10–20 min }
