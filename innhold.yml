@@ -24,8 +24,8 @@ tur:
   undertittel: Gourmetklubben på tur
   ingress: "23.–26. september 2027. Fire dager med bouchon, Beaujolais-cru og skikkelig IPA. Første natt på vingård i Quincié, deretter to netter midt i gamlebyen i Lyon. Alt dere trenger å vite ligger her."
   fakta:
-    - { etikett: Lander, verdi: "Tor 23.9 · 10:00", tekst: Lyon-Saint Exupéry }
-    - { etikett: Drar hjem, verdi: "Søn 26.9 · 14:00", tekst: Vær på flyplassen 12:00 }
+    - { etikett: Utreise, verdi: "Tor 23.9 · 07:00", tekst: "Norwegian DY 1454, Gardermoen → Lyon, lander 09:35" }
+    - { etikett: Hjemreise, verdi: "Søn 26.9 · 14:40", tekst: "Norwegian DY 1455, Lyon → Gardermoen, lander 17:10" }
     - { etikett: Gjengen, verdi: 5 karer, tekst: "Mat, vin og IPA" }
     - { etikett: Bord å booke, verdi: 5 stk, tekst: Se sjekklista }
 
@@ -39,8 +39,9 @@ program:
     hvor: Flyplassen → Beaujolais
     merke: Leiebil
     punkter:
-      - { tid: "10:00", tittel: Landing på Lyon-Saint Exupéry, sted: "Aéroport Lyon-Saint Exupéry", tekst: Hent leiebilen i terminalen. Én sjåfør holder seg til smaksprøver. }
-      - { tid: "11:00", tittel: Kjør mot Beaujeu, tekst: "Ca. 1 time via A46/A6. Innsjekk på vingården er først 16:00, så vi tar lunsj og smaking på veien." }
+      - { tid: "07:00", tittel: "Avgang Gardermoen, DY 1454", tekst: "Norwegian fra Oslo lufthavn. Vær på Gardermoen senest 05:30, og kjøp gjerne en kaffe til flyet." }
+      - { tid: "09:35", tittel: Landing på Lyon-Saint Exupéry, sted: "Aéroport Lyon-Saint Exupéry", tekst: "Hent leiebilen i terminalen. Én sjåfør holder seg til smaksprøver." }
+      - { tid: "10:30", tittel: Kjør mot Beaujeu, tekst: "Ca. 1 time via A46/A6. Innsjekk på vingården er først 16:00, så vi tar lunsj og smaking på veien." }
       - { tid: "12:30", tittel: Lunsj i Beaujeu, sted: "Beaujeu", chip: sjekk, tekst: "Beaujolais' gamle hovedstad, 10 min fra vingården. Le Retinton er et forslag. Book eller sjekk åpningstider." }
       - { tid: "14:30", tittel: "Le Comptoir Beaujolais, Beaujeu", sted: "Le Comptoir Beaujolais", tekst: "Hvelvet vinkjeller fra 1956 med over 40 viner fra 15 domener. Smak cru, spis ost og charcuterie, kjøp med hjem. Åpner igjen 14:30 etter lunsjpausen." }
       - { tid: "16:00", tittel: Innsjekk hos Yvan, sted: "Vingården i Quincié", tekst: "175 route de Saint-Nizier, Quincié-en-Beaujolais. Spør om smaking på domenet og grill til kvelden." }
@@ -77,9 +78,9 @@ program:
     merke: Uber
     punkter:
       - { tid: "09:00", tittel: Croissant og kaffe, sted: "Boulangerie Saint-Vincent", tekst: Boulangerie Saint-Vincent er åpen til 15:00 på søndager. }
-      - { tid: "10:30", tittel: Sjekk ut og pakk vinen godt, tekst: "Vin i innsjekket bagasje: pakk flaskene i klær eller vinbeskyttere." }
-      - { tid: "11:00", tittel: Uber til flyplassen, sted: "Aéroport Lyon-Saint Exupéry", tekst: "Ca. 35–45 min. Alternativ: Rhônexpress fra Part-Dieu, ca. 30 min." }
-      - { tid: "14:00", tittel: Fly hjem, tekst: Vær på flyplassen senest 12:00. }
+      - { tid: "11:00", tittel: Sjekk ut og pakk vinen godt, tekst: "Vin i innsjekket bagasje: pakk flaskene i klær eller vinbeskyttere." }
+      - { tid: "11:45", tittel: Uber til flyplassen, sted: "Aéroport Lyon-Saint Exupéry", tekst: "Ca. 35–45 min, så vi er der rundt 12:30. Alternativ: Rhônexpress fra Part-Dieu, ca. 30 min." }
+      - { tid: "14:40", tittel: "Fly hjem, DY 1455", sted: "Aéroport Lyon-Saint Exupéry", tekst: "Norwegian til Gardermoen, lander 17:10. Vær på flyplassen senest 12:40." }
 
 # Spisesteder og barer. "kart" plasserer en nål på Lyon-kartet:
 #   nr = tallet på nåla, x/y = posisjon (x 0–400 fra venstre, y 0–520 fra toppen),
@@ -222,6 +223,8 @@ overnatting:
 transport:
   ingress: Bil i Beaujolais, beina og Uber i Lyon. Fem personer passer ikke i en vanlig Uber, så bestill to biler eller en UberXL.
   strekninger:
+    - { fra: Oslo → Lyon, hvordan: "Norwegian DY 1454, tor 23.9, 07:00 → 09:35", tid: 2 t 35 min }
+    - { fra: Lyon → Oslo, hvordan: "Norwegian DY 1455, søn 26.9, 14:40 → 17:10", tid: 2 t 30 min }
     - { fra: Flyplass → Quincié, hvordan: Leiebil via A46 og A6, tid: ca. 1 t }
     - { fra: Quincié → Beaujeu, hvordan: Leiebil gjennom vinmarkene, tid: ca. 10 min }
     - { fra: Quincié → flyplass, hvordan: Lever bilen på flyplassen fredag formiddag, tid: ca. 1 t }
