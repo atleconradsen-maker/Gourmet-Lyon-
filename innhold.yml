@@ -70,8 +70,8 @@ program:
     hvor: Hele dagen i Lyon
     merke: Til fots + Uber
     punkter:
-      - { tid: "08:30", tittel: "Frokost: Boulangerie Saint-Vincent", sted: "Boulangerie Saint-Vincent", tekst: "5 min å gå over gangbrua Saint-Vincent. Åpner 07:30 på lørdager." }
-      - { tid: "10:00", tittel: Les Halles Paul Bocuse, sted: "Les Halles Paul Bocuse", tekst: Matmarkedet. Østers og et glass hvitvin til formiddagen er helt akseptert her. Uber ca. 15 min. Vi blir til 12:10 og tar så Uber til lunsj, ca. 15 min. }
+      - { tid: "09:00", tittel: "Mâchon: Bouchon Palais Grillet", sted: "Bouchon Palais Grillet 8 rue du Palais Grillet Lyon", chip: book, tekst: "Silkevevernes gamle frokost: saucisson, pølser, terrine, ost og en pot Beaujolais klokka ni om morgenen. Serveres lørdag og søndag 09:00–11:00, og må bookes på forhånd på 04 72 04 04 00. Ca. 12 min å gå fra leiligheten over Saône." }
+      - { tid: "11:00", tittel: Les Halles Paul Bocuse, sted: "Les Halles Paul Bocuse", tekst: "Matmarkedet, ca. 10 min med Uber. Etter mâchon holder det med en titt og et glass hvitvin, eller et par østers for de som orker. Vi tar Uber til lunsj 12:10, ca. 15 min." }
       - { tid: "12:30", tittel: "Lang lunsj: Café Comptoir Abel", sted: "Café Comptoir Abel", chip: book, tekst: "Bouchon fra 1928 nær Ainay. Kjent for quenelle de brochet og kylling med morkler. Lunsj til 14:30 på lørdager." }
       - { tid: "15:00", tittel: Fritid, tekst: "Lunsjen trekker gjerne ut. Etterpå blir det en lur i leiligheten, shopping eller en kaffe på en terrasse." }
       - { tid: "16:15", tittel: "Oppvarming: Dr Yeast", sted: "Dr Yeast 6 rue de Cuire Lyon", chip: ipa, tekst: "Ølbar på Croix-Rousse med god IPA-liste, åpen fra 11:00 på lørdager og 5 min å gå fra Carousel. Uber fra gamlebyen tar ca. 15 min." }
@@ -278,6 +278,7 @@ sjekkliste:
   - Book torsdagsmiddag på Le Mont Brouilly, eller avtal grill med Yvan
   - Spør Valérie Stéphane om vi kan sette fra oss bagasjen før 15:00 fredag
   - Book Daniel et Denise Saint-Jean, fredag 12:30, fem personer
+  - Book mâchon på Bouchon Palais Grillet, lørdag 09:00, fem personer
   - Book Café Comptoir Abel, lørdag 12:30, fem personer
   - Book Têtedoie, lørdag 20:00, fem personer
   - Kjøp billetter til Musée des Confluences på nett
@@ -690,11 +691,11 @@ gems:
       sok: Fresque des Lyonnais
     - navn: Mâchon kl. 9
       type: Lyon-tradisjon · bouchon
-      tekst: "Silkevevernes gamle frokost: pølser, terrine, ost og en pot Beaujolais klokka ni om morgenen. Flere bouchons arrangerer mâchon i helgene, blant dem Auberge des Canuts. Det er like lyonsk som det blir."
-      apent: Helgemorgener, sjekk og book
-      adresse: Auberge des Canuts, Lyon
-      sok: Auberge des Canuts Lyon
-      chip: sjekk
+      tekst: "Silkevevernes gamle frokost: pølser, terrine, ost og en pot Beaujolais klokka ni om morgenen. Vi tar den lørdag morgen på Bouchon Palais Grillet. Det er like lyonsk som det blir."
+      apent: "Lørdag og søndag 09:00–11:00. Må bookes."
+      adresse: 8 rue du Palais Grillet, 69002 Lyon
+      sok: Bouchon Palais Grillet Lyon
+      chip: book
     - navn: Micro Sillon
       type: Vinbar · Presqu'île
       tekst: "Vinbar og vinhandel med terrasse på et lite torg, med østers, ost og charcuterie. Lokalfolk, ikke turister."
