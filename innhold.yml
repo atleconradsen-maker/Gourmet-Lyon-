@@ -62,7 +62,7 @@ program:
       - { tid: "15:00", tittel: Innsjekk i Rue de la Loge, sted: "Leilighet i Rue de la Loge", tekst: "4 rue de la Loge, Vieux Lyon. Vert er Valérie Stéphane." }
       - { tid: "15:45", tittel: Musée des Confluences, sted: "Musée des Confluences", tekst: "Vitenskap og antropologi i en bygning som er verdt turen alene. Uber ca. 15 min." }
       - { tid: "17:45", tittel: Bateau Bellona, sted: "Bateau Bellona", chip: sjekk, tekst: "Péniche-bar ved museet med terrasse over Rhône. Åpningstidene varierer etter sesong, så sjekk før dere går." }
-      - { tid: "19:30", tittel: Ninkasi Gerland, sted: "Ninkasi Gerland", chip: ipa, tekst: "Lyons eget bryggeri. Stor brewpub med burgere og husets øl. Ca. 10 min med Uber fra Confluence." }
+      - { tid: "19:30", tittel: Ninkasi Guillotière, sted: "Ninkasi Guillotière", chip: ipa, tekst: "Lyons eget bryggeri, ved Rhône med stor terrasse og utsikt til Fourvière. Burgere og husets øl. Ca. 15 min med Uber fra Confluence. (Ninkasi Gerland er stengt for oppussing til 2028.)" }
 
   - dag: Lørdag 25. september
     hvor: Hele dagen i Lyon
@@ -136,15 +136,15 @@ steder:
     nettside: https://www.bateaubellona.fr/
     kart: { nr: 3, x: 258, y: 480, type: ol }
 
-  - navn: Ninkasi Gerland
-    type: Bryggeri · Gerland
+  - navn: Ninkasi Guillotière
+    type: Bryggeri · Guillotière
     når: Fredag kveld
-    tekst: Lyons egen brewpub siden 1997. Burgere, husets øl og konsertscene. Åpent alle dager, kjøkkenet til 23.
+    tekst: "Lyons egen brewpub, ved Rhône med over 200 plasser på terrassen og utsikt til Fourvière. Burgere og husets øl. Åpent alle dager 08:00–01:00, mat 11:00–23:00. Ca. 25 min å gå hjem over Presqu'île, eller en kort Uber."
     bestill: en smaksplanke med husets IPA-er.
-    adresse: 267 rue Marcel Mérieux, 69007 Lyon
-    sok: Ninkasi Gerland Lyon
-    nettside: https://www.ninkasi.fr/lieux/ninkasi-gerland/
-    kart: { nr: 4, x: 300, y: 420, type: ol }
+    adresse: 2 place Antonin Jutard, 69003 Lyon
+    sok: Ninkasi Guillotière Lyon
+    nettside: https://www.ninkasi.fr/lieux/ninkasi-guillotiere/
+    kart: { nr: 4, x: 270, y: 300, type: ol }
 
   - navn: Les Halles Paul Bocuse
     type: Matmarked · Part-Dieu
@@ -427,13 +427,13 @@ ipa:
       adresse: 2 place de Francfort, 69003 Lyon
       sok: Malting Pot Lyon Part-Dieu
       chip: sjekk
-    - navn: Ninkasi Gerland
-      type: Bryggeri · Gerland
-      tekst: Lyons eget bryggeri. Husets IPA-er og sesongøl. Allerede i programmet fredag kveld.
-      apent: Alle dager, kjøkken til 23:00
-      adresse: 267 rue Marcel Mérieux, 69007 Lyon
-      sok: Ninkasi Gerland Lyon
-      nettside: https://www.ninkasi.fr/lieux/ninkasi-gerland/
+    - navn: Ninkasi Guillotière
+      type: Bryggeri · Guillotière
+      tekst: "Lyons eget bryggeri. Husets IPA-er og sesongøl. Allerede i programmet fredag kveld. (Gerland er stengt for oppussing til 2028.)"
+      apent: "Alle dager 08:00–01:00, mat 11:00–23:00"
+      adresse: 2 place Antonin Jutard, 69003 Lyon
+      sok: Ninkasi Guillotière Lyon
+      nettside: https://www.ninkasi.fr/lieux/ninkasi-guillotiere/
     - navn: Bar du 405
       type: Ølbar · Presqu'île
       tekst: Rundt 50 øl på fat fordelt på to barer i samme gate. Mer bredde enn nisje, men alltid noen IPA-er på listen.
@@ -644,7 +644,7 @@ ma_drikke:
     tekst: "Grønn (55 %) eller gul (40 %), laget av munker i fjellene sørøst for Lyon etter en hemmelig oppskrift med 130 urter. Klassisk digestif etter Têtedoie."
   - navn: Ninkasi IPA
     type: Øl · Lyon
-    tekst: Lyons egen IPA. Ta en på Ninkasi Gerland, og sjekk ut IPA-guiden for resten.
+    tekst: Lyons egen IPA. Ta en på Ninkasi Guillotière, og sjekk ut IPA-guiden for resten.
   - navn: Pastis
     type: Aperitiff · Sør-Frankrike
     tekst: "Anislikør blandet med kaldt vann. Det man drikker til pétanque langs Saône, enten man liker det eller ikke."
