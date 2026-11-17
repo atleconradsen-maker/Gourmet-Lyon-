@@ -74,7 +74,8 @@ program:
       - { tid: "10:00", tittel: Les Halles Paul Bocuse, sted: "Les Halles Paul Bocuse", tekst: Matmarkedet. Østers og et glass hvitvin til formiddagen er helt akseptert her. Uber ca. 15 min. }
       - { tid: "11:30", tittel: Traboules i Vieux Lyon, sted: "54 Rue Saint-Jean Lyon", tekst: Skjulte passasjer gjennom bakgårdene. Start ved 54 rue Saint-Jean og 27 rue du Bœuf. }
       - { tid: "12:30", tittel: "Lang lunsj: Café Comptoir Abel", sted: "Café Comptoir Abel", chip: book, tekst: "Bouchon fra 1928 nær Ainay. Kjent for quenelle de brochet og kylling med morkler. Lunsj til 14:30 på lørdager." }
-      - { tid: "15:00", tittel: Fourvière-basilikaen, sted: "Fourvière-basilikaen", tekst: Ta kabelbanen fra Vieux Lyon. Utsikten over hele byen fra terrassen bak kirken. }
+      - { tid: "14:45", tittel: "Opp skråningen: Cour des Voraces", sted: "Cour des Voraces Lyon", tekst: "Metro A fra Ampère til Hôtel de Ville, så C til Croix-Paquet, eller Uber ca. 10 min. Gå inn ved 9 place Colbert og se den åtte etasjer høye steintrappa i bakgården der silkeopprøret ble planlagt." }
+      - { tid: "15:45", tittel: "Jardin Rosa Mir og Mur des Canuts", sted: "Mur des Canuts Lyon", tekst: "Rusle opp til Croix-Rousse. Jardin Rosa Mir (87 grande rue de la Croix-Rousse) er en hemmelig steinhage som bare er åpen lørdager 13–18. Så gruppebilde foran Mur des Canuts, Europas største trompe-l'oeil. Derfra er det kort vei til Carousel." }
       - { tid: "17:30", tittel: "Carousel Beer, Croix-Rousse", sted: "Carousel Beer", chip: ipa, tekst: Taproom med ca. 12 roterende fat og stort utvalg på boks. Terrasse på torget. Metro C eller Uber. }
       - { tid: "19:15", tittel: "Aperitiff: Le Phosphore", sted: "Le Phosphore Tetedoie Lyon", tekst: "Têtedoies vinbar med terrasse i samme hus. Et glass med utsikt over byen før vi går inn til middag." }
       - { tid: "20:00", tittel: "Middag: Têtedoie", sted: "Têtedoie", chip: book, tekst: "Kveldens store middag, på Fourvière-høyden med vinduer over byen. Uber fra Croix-Rousse ca. 15 min." }
@@ -173,7 +174,7 @@ steder:
 
   - navn: Fourvière-basilikaen
     type: Utsikt · Fourvière
-    når: Lørdag ettermiddag
+    når: Valgfritt, hvis det blir tid
     tekst: Basilikaen på høyden over gamlebyen. Utsikten fra terrassen er den beste i byen.
     bestill: kabelbanen opp, og gå ned trappene gjennom hagene.
     adresse: 8 place de Fourvière, 69005 Lyon
