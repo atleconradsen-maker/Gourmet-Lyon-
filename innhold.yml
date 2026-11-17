@@ -237,7 +237,7 @@ transport:
     - { fra: Oslo → Lyon, hvordan: "Norwegian DY 1454, tor 23.9, 07:00 → 09:35", tid: 2 t 35 min }
     - { fra: Lyon → Oslo, hvordan: "Norwegian DY 1455, søn 26.9, 14:40 → 17:10", tid: 2 t 30 min }
     - { fra: Flypris tur-retur, hvordan: "1 800 kr per person med håndbagasje, 2 800 kr med én innsjekket koffert (25 kg)", tid: per person }
-    - { fra: Leiebil, hvordan: "FLIZZR på flyplassen, VW Golf Estate eller lignende. Manuell girkasse, 5 seter, plass til 4 kofferter. Hentes tor 10:30 og leveres fre 10:30. Gratis shuttlebuss fra terminalen, innsjekking på nett. Full tank ut og full tank inn.", tid: "Ca. 1 434 kr, ca. 287 kr per person. Sjekk prisen for de nye tidene." }
+    - { fra: Leiebil, hvordan: "FLIZZR på flyplassen, VW Golf Estate eller lignende. Manuell girkasse, 5 seter, plass til 4 kofferter. Hentes tor 10:30 og leveres fre 10:30. Gratis shuttlebuss fra terminalen, innsjekking på nett. Full tank ut og full tank inn.", tid: "1 434 kr, ca. 287 kr per person" }
     - { fra: Flyplass → Quincié, hvordan: Leiebil via A46 og A6, tid: ca. 1 t }
     - { fra: Quincié → Beaujeu, hvordan: Leiebil gjennom vinmarkene, tid: ca. 10 min }
     - { fra: Quincié → flyplass, hvordan: "Fredag: alle kjører rett til flyplassen og leverer bilen 10:30. Kjør 09:15", tid: ca. 1 t }
@@ -1000,3 +1000,38 @@ livemusikk:
           apent: "Mandag–lørdag 18:00–01:00"
           adresse: 20 quai du Docteur Gailleton, 69002 Lyon
           sok: Le Melhor Sofitel Lyon
+
+# Sport vi kan se. Kampoppsett for september 2027 kommer først sommeren 2027.
+sport:
+  ingress: "Rugby, fotball eller hesteløp, hvis det passer med en kamp eller et løp mens vi er der. Terminlistene for høsten 2027 kommer først sommeren 2027, og nøyaktige dager og tider settes ofte bare noen uker før, så sjekk nærmere avreise."
+  steder:
+    - navn: LOU Rugby
+      type: Rugby, Top 14 · Gerland
+      tekst: "Lyons rugbylag spiller i den franske toppdivisjonen. Sesongen starter i slutten av august, så det er stor sjanse for en runde helga 24.–26. september, enten hjemme eller borte. Billigere og mer folkelig enn fotballen, med god stemning og øl på tribunen."
+      apent: "Kampene går som regel fredag kveld, lørdag eller søndag. Sjekk terminlista."
+      bestill: "Kjøp billetter på nettsiden. Metro B til Stade de Gerland."
+      adresse: Matmut Stadium de Gerland, 353 avenue Jean Jaurès, 69007 Lyon
+      sok: Matmut Stadium de Gerland
+      nettside: https://www.lourugby.fr/
+    - navn: Olympique Lyonnais
+      type: Fotball, Ligue 1 · Décines
+      tekst: "Den store fotballklubben i byen, på Groupama Stadium med plass til over 59 000. Ligue 1 spiller hver helg i september, så OL har enten hjemme- eller bortekamp. Stemningen på Virage Nord er verdt det alene."
+      apent: "Kamper fredag–søndag. Dag og tid settes ca. en måned før."
+      bestill: "Kjøp billetter på nettsiden. Trikk T3 fra Part-Dieu til stadion, ca. 25 min."
+      adresse: Groupama Stadium, 10 avenue Simone Veil, 69150 Décines-Charpieu
+      sok: Groupama Stadium Decines
+      nettside: https://www.groupama-stadium.com/
+    - navn: Hippodrome de Parilly
+      type: Hesteløp · Bron
+      tekst: "Lyons største hesteløpsbane, med galopp, trav og hinderløp. Sesongen åpner igjen i september. Et løpsprogram har 7–9 løp med omtrent en halvtime mellom hvert, og du kan spille på totoen på stedet. Ta med fem euro hver og velg hver vår hest."
+      apent: "Løpsdager gjennom høsten. Se kalenderen på nettsiden."
+      adresse: 4-6 avenue Pierre Mendès-France, 69500 Bron
+      sok: Hippodrome de Parilly Bron
+      nettside: https://www.leshippodromesdelyon.fr/
+    - navn: Hippodrome Carré de Soie
+      type: Hesteløp med kveldsløp · Vaulx-en-Velin
+      tekst: "Søsterbanen til Parilly, med trav og galopp under flomlys. Her er det kveldsløp, så det kan passe etter middag eller som start på en lørdagskveld."
+      apent: "Se kalenderen på nettsiden for kveldsløp."
+      adresse: 1 avenue de Böhlen, 69120 Vaulx-en-Velin
+      sok: Hippodrome Carre de Soie Vaulx-en-Velin
+      nettside: https://www.leshippodromesdelyon.fr/

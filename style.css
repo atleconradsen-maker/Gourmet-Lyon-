@@ -153,7 +153,8 @@ footer img{height:40px;filter:var(--logo-filter);opacity:.8}
   .facts{grid-template-columns:1fr 1fr}
   .stay,.mapbox,.lex{grid-template-columns:1fr}
   .prac{grid-template-columns:1fr}
-  .leg{grid-template-columns:1fr;gap:4px}
+  .leg{grid-template-columns:minmax(0,1fr);gap:4px}
+  .leg .dur{white-space:normal}
   .tl{padding-inline:16px}
   .day-head{padding:16px}
   .day-head .tag{margin-left:0}
