@@ -63,6 +63,8 @@ program:
       - { tid: "15:45", tittel: Musée des Confluences, sted: "Musée des Confluences", tekst: "Vitenskap og antropologi i en bygning som er verdt turen alene. Uber ca. 15 min." }
       - { tid: "17:45", tittel: Bateau Bellona, sted: "Bateau Bellona", chip: sjekk, tekst: "Péniche-bar ved museet med terrasse over Rhône. Åpningstidene varierer etter sesong, så sjekk før dere går." }
       - { tid: "19:30", tittel: Ninkasi Guillotière, sted: "Ninkasi Guillotière", chip: ipa, tekst: "Lyons eget bryggeri, ved Rhône med stor terrasse og utsikt til Fourvière. Burgere og husets øl. Ca. 15 min med Uber fra Confluence. (Ninkasi Gerland er stengt for oppussing til 2028.)" }
+      - { tid: "22:00", tittel: "Videre: La Baignoire", sted: "La Baignoire 11 rue des Trois Rois Lyon", tekst: "Speakeasy i 30-tallsstil, 5 min å gå fra Ninkasi. Åpen til 02:30 på fredager. Alternativ: Soda Bar på Presqu'île (gjennom sykkelbutikken, til 03:00) på vei hjem." }
+      - { tid: "23:30", tittel: "Siste runde i gamlebyen", sted: "Johnny Walsh's Lyon", tekst: "Johnny Walsh's i rue Saint-Georges har live musikk og er åpen til 03:00. Er beina slitne, er Fleming's vegg i vegg med leiligheten og åpen til 01:00." }
 
   - dag: Lørdag 25. september
     hvor: Hele dagen i Lyon
@@ -76,6 +78,8 @@ program:
       - { tid: "17:30", tittel: "Carousel Beer, Croix-Rousse", sted: "Carousel Beer", chip: ipa, tekst: Taproom med ca. 12 roterende fat og stort utvalg på boks. Terrasse på torget. Metro C eller Uber. }
       - { tid: "19:15", tittel: "Aperitiff: Le Phosphore", sted: "Le Phosphore Tetedoie Lyon", tekst: "Têtedoies vinbar med terrasse i samme hus. Et glass med utsikt over byen før vi går inn til middag." }
       - { tid: "20:00", tittel: "Middag: Têtedoie", sted: "Têtedoie", chip: book, tekst: "Kveldens store middag, på Fourvière-høyden med vinduer over byen. Uber fra Croix-Rousse ca. 15 min." }
+      - { tid: "23:00", tittel: "Ned fra Fourvière: Bon-Secours Bar", sted: "Ambassade Bonnat Crozet 12 rue du Boeuf Lyon", tekst: "Gå ned trappene gjennom Jardin du Rosaire til gamlebyen, ca. 15 min, eller ta en Uber. Bon-Secours er en hvelvet kjellerbar 3 min fra leiligheten, åpen til midnatt. Er den full, ligger Fleming's på hjørnet." }
+      - { tid: "00:00", tittel: "Natta: velg nivå", sted: "Johnny Walsh's Lyon", tekst: "Rolig: allsang på Johnny Walsh's til 03:00. Fancy: L'Antiquaire på Croix-Rousse til 03:00. Full fest: Le Sucre, klubben på taket i Confluence, til 05:00. Eller Vidars corner." }
 
   - dag: Søndag 26. september
     hvor: Hjemreise
