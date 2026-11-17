@@ -73,7 +73,7 @@ program:
       - { tid: "08:30", tittel: "Frokost: Boulangerie Saint-Vincent", sted: "Boulangerie Saint-Vincent", tekst: "5 min å gå over gangbrua Saint-Vincent. Åpner 07:30 på lørdager." }
       - { tid: "10:00", tittel: Les Halles Paul Bocuse, sted: "Les Halles Paul Bocuse", tekst: Matmarkedet. Østers og et glass hvitvin til formiddagen er helt akseptert her. Uber ca. 15 min. }
       - { tid: "11:30", tittel: Traboules i Vieux Lyon, sted: "54 Rue Saint-Jean Lyon", tekst: Skjulte passasjer gjennom bakgårdene. Start ved 54 rue Saint-Jean og 27 rue du Bœuf. }
-      - { tid: "12:30", tittel: "Lang lunsj: Café Comptoir Abel", sted: "Café Comptoir Abel", chip: book, tekst: Bouchon fra 1928 nær Ainay. Kjent for tablier de sapeur og kardongratin. }
+      - { tid: "12:30", tittel: "Lang lunsj: Café Comptoir Abel", sted: "Café Comptoir Abel", chip: book, tekst: "Bouchon fra 1928 nær Ainay. Kjent for quenelle de brochet og kylling med morkler. Lunsj til 14:30 på lørdager." }
       - { tid: "15:00", tittel: Fourvière-basilikaen, sted: "Fourvière-basilikaen", tekst: Ta kabelbanen fra Vieux Lyon. Utsikten over hele byen fra terrassen bak kirken. }
       - { tid: "17:30", tittel: "Carousel Beer, Croix-Rousse", sted: "Carousel Beer", chip: ipa, tekst: Taproom med ca. 12 roterende fat og stort utvalg på boks. Terrasse på torget. Metro C eller Uber. }
       - { tid: "19:15", tittel: "Aperitiff: Le Phosphore", sted: "Le Phosphore Tetedoie Lyon", tekst: "Têtedoies vinbar med terrasse i samme hus. Et glass med utsikt over byen før vi går inn til middag." }
@@ -163,10 +163,12 @@ steder:
   - navn: Café Comptoir Abel
     type: Bouchon · Ainay
     når: Lørdag lunsj
-    tekst: En av byens eldste bouchons, med trepanel og rutete duker. Store porsjoner.
-    bestill: tablier de sapeur, gratin de cardons, quenelle.
+    tekst: "En lyonsk institusjon siden 1928, med trepanel og rutete duker. Store porsjoner. Book på nettsiden eller ring 04 78 37 46 18."
+    bestill: "quenelle de brochet gratinert, poulet aux morilles eller ris de veau med morkler."
+    apent: "Lunsj man–fre 12:00–14:00, lør–søn 12:00–14:30. Middag 19:00–22:00, fre–lør til 22:30."
     adresse: 25 rue Guynemer, 69002 Lyon
     sok: Café Comptoir Abel Lyon
+    nettside: https://www.maisonabel.fr/maison-abel/le-cafe-comptoir-chez-abel/
     kart: { nr: 6, x: 210, y: 355, type: mat }
 
   - navn: Fourvière-basilikaen
@@ -595,7 +597,7 @@ ma_spise:
     hvor: Daniel et Denise, Café Comptoir Abel
   - navn: Tablier de sapeur
     tekst: Marinert vom, panert og stekt, servert med sauce gribiche. Testen på om man er en ekte gourmet.
-    hvor: Café Comptoir Abel
+    hvor: De fleste tradisjonelle bouchons
   - navn: Pâté en croûte
     tekst: Postei i butterdeig med foie gras og kjøttfarse. Kokken bak Daniel et Denise, Joseph Viola, er tidligere verdensmester i faget.
     hvor: Daniel et Denise
@@ -610,7 +612,7 @@ ma_spise:
     hvor: Têtedoie, Les Halles
   - navn: Gratin de cardons
     tekst: Kardon (i slekt med artisjokk) gratinert med beinmarg. Høstsesong, så vi treffer perfekt i september.
-    hvor: Café Comptoir Abel
+    hvor: De fleste tradisjonelle bouchons
   - navn: Cervelle de canut
     tekst: Fersk ost med urter, sjalott og olje. «Silkevevernes hjerne», men ingen hjerne.
     hvor: Alle bouchons, som forrett
